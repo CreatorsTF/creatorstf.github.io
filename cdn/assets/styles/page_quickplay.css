@@ -1,0 +1,294 @@
+.quickplay_selected_gamemode_wrapper {
+    min-height: 70px;
+}
+
+.quickplay_selected_gamemode_preview img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.quickplay_selected_gamemode_title {
+    font-family: "TF2 Build", sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.quickplay_region {
+    display: flex;
+}
+
+.quickplay_region_flag {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.quickplay_region_flag img {
+    margin-top: 2px;
+    height: 32px;
+    border-radius: 5px;
+}
+
+.quickplay_region_title {
+    width: 100%;
+}
+
+.quickplay_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.quickplay_gamemode {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 10px;
+    transition: transform .1s ease, box-shadow .1s ease, border .1s ease;
+    border: 0 solid #aaa;
+    border-radius: 7px;
+}
+
+.quickplay_gamemode.selected::after {
+    box-shadow: inset 0 0 0 5px #bbb;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: inset 5px solid #fff;
+}
+
+.quickplay_gamemode_image {
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 9px;
+}
+
+.quickplay_gamemode_title {
+    box-sizing: border-box;
+    font-family: "TF2 Build", sans-serif;
+}
+
+.quickplay_gamemode_desc {
+    font-size: 14px;
+    color: #666;
+}
+
+.quickplay_gamemode_information {
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.quickplay_gamemode:hover {
+    transform: scale(1.005);
+    box-shadow: 0px 0px 5px #0006;
+}
+
+.quickplay_section_banner {
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 0 7px 0 #0007;
+    margin-bottom: 20px;
+}
+
+.quickplay_section_banner_subtitle {
+    color: #aaa;
+    font-size: 18px;
+    font-family: "TF2 Secondary", sans-serif;
+}
+
+.quickplay_section_banner_title {
+    text-shadow: 3px 3px #000;
+    font-size: 35px;
+    font-family: "TF2 Build", sans-serif;
+    color: #fff;
+}
+
+.quickplay_section_banner.mvm {
+    background-image: url(/cdn/assets/images/quickplay/banner_mvm.png);
+}
+
+.quickplay_section_banner.pubs {
+    background-image: url(/cdn/assets/images/quickplay/banner_pubs.png?v=1);
+}
+
+.quickplay_coop_tours_containers {
+    box-sizing: border-box;
+    padding: 17px 10px;
+    border-radius: 10px;
+    background: #23201f;
+}
+
+.quickplay_coop_tour {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0;
+    transition: transform .2s ease;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 0 7px 0 #0002;
+}
+
+.quickplay_coop_tour:last-child {
+    margin-bottom: 0px;
+}
+
+.quickplay_coop_tour:hover {
+    transform: scale(1.01) translateY(-1px);
+}
+
+.quickplay_coop_selector_container {
+    margin-bottom: 20px;
+}
+
+.quickplay_coop_banner {
+    width: 100%;
+    height: 80px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.quickplay_coop_info {
+    padding: 10px 10px;
+}
+
+.quickplay_coop_title {
+    font-family: "TF2 Build", sans-serif;
+    text-shadow: 2px 2px 1px #000;
+    font-size: 18px;
+}
+
+.quickplay_coop_desc {
+    font-size: 15px;
+    color: #666;
+}
+
+.quickplay_coop_missions_container {
+    width: 300px;
+}
+
+.quickplay_gamemode_progress {
+    width: 100%;
+    height: 10px;
+    background: #242120;
+    border-radius: 4px;
+    margin: 4px 0;
+    overflow: hidden;
+}
+
+.quickplay_gamemode_progress_bar {
+    width: 50%;
+    height: 100%;
+    background: #a36a21;
+}
+
+.checkbox .checklabel {
+    color: #888;
+}
+
+.qp_tour_map {
+    margin-bottom: 20px;
+}
+
+.qp_tour_map_image {
+    width: 140px;
+    margin-right: 10px;
+}
+
+.qp_tour_map_image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.qp_tour_map_title {
+    font-family: "TF2 Build", sans-serif;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px #000;
+    font-size: 18px;
+    color: #aaa;
+}
+
+.quickplay_gamemode_desc .fullwidth {
+    margin-right: 10px;
+}
+
+.qp_tour_mission {
+    width: 100%;
+    max-width: 400px;
+}
+
+.qp_tour_mission i {
+    font-weight: bold;
+}
+
+.qp_tour_mission.completed .checklabel {
+    color: #666;
+}
+
+.quickplay_gamemode .checkbox {
+    margin-left: 10px;
+    position: static;
+}
+
+.qp_frontpage_banner {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: inset 0px -80px 50px -10px #000c, 0px 0px 5px #0006;
+    transition: box-shadow .1s ease, transform .1s ease;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    overflow: hidden;
+}
+
+.qp_frontpage_banner:hover {
+    box-shadow: inset 0px -150px 50px -10px #000c, 0px 0px 5px #0006;
+}
+
+.qp_frontpage_banner:hover .qp_frontpage_banner_desc {
+    height: 50px;
+    opacity: 1;
+}
+
+.qp_frontpage_banner:hover .qp_frontpage_banner_icon {
+    margin-bottom: 30px;
+}
+
+.qp_frontpage_banner_wrapper {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.qp_frontpage_banner_wrapper:last-child {
+    margin: 0;
+}
+
+.qp_frontpage_banner_desc {
+    color: #bbb;
+    margin-top: 5px;
+    transition: opacity .1s ease, height .1s ease;
+    height: 4px;
+    opacity: 0;
+}
+
+.qp_frontpage_banner_title {
+    font-family: "TF2 Build", sans-serif;
+    color: #ccc;
+    font-size: 26px;
+}
+
+.qp_frontpage_banner_icon {
+    transition: margin .1s ease;
+}

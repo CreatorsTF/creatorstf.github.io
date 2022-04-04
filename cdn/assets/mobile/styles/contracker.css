@@ -1,0 +1,14 @@
+.cyoa-monitor {
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+
+
+.cyoa-toolbar .ctf-profile {
+	align-self: center;
+	flex-basis: 32px;
+	flex-shrink: 0;
+}

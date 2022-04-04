@@ -1,0 +1,29 @@
+---
+layout: default
+sidebar: true
+---
+
+<div>
+	<div></div>
+	<div>{% assign posts = site.posts | where_exp: "item", "item.categories contains 'updates'" %}
+		{% for post in posts %}
+		{% include post.html post=post %}
+		{% endfor %}
+
+	</div>
+	<!-- <div>
+		<div class="flex">
+			<div class="fullwidth"></div>
+			<div class="noshrink whitelink" style="color: #aaa">
+				<div class="tf-button m-r-5" disabled="">◀</div>
+				<span>1</span>
+				&nbsp;<a href="https://creators.tf/updates/2">2</a>
+				&nbsp;<a href="https://creators.tf/updates/3">3</a>
+				&nbsp;...&nbsp;<a href="https://creators.tf/updates/9">9</a>
+				<a href="https://creators.tf/updates/2">
+					<div class="tf-button m-l-5">▶</div>
+				</a>
+			</div>
+		</div>
+	</div> -->
+</div>

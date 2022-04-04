@@ -1,0 +1,32 @@
+.achievement_content {
+    height: 100%;
+}
+
+.achievement_title {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.achievement_progress {
+    width: 100%;
+    height: 16px;
+    background: #333;
+    max-width: 600px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.achievement_progress_bar {
+    height: 100%;
+    background: #9e7037;
+}
+
+.achievement_progress_value {
+    font-size: 14px;
+}
+
+.achievement_datetime {
+    min-width: 200px;
+    font-size: 14px;
+    text-align: right;
+}

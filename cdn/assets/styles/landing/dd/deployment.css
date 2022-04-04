@@ -1,0 +1,133 @@
+#day04_bg01 {
+    background-image: url(/cdn/assets/images/tf_pages/digitaldirective/deployment/container04test_nologo.jpg) !important;
+    height: 1130px;
+}
+
+/* #day04_bg02 {
+    padding: 0px;
+} */
+
+#day04_bg02 .boxTitle {
+    position: relative;
+    top: -55px;
+}
+
+.day04_first-text {
+    top: -75px !important;
+}
+
+/* #day04_bg03 {
+    padding: 0px;
+} */
+
+#day04_bg03 .inner-bg {
+    background-color: #14141388;
+    display: block;
+    overflow: visible;
+    padding: 75px 0px;
+}
+
+/* #day04_bg04 {
+    padding: 0px;
+} */
+
+#day04_bg04 .inner-bg {
+    background-color: #14141388;
+    display: block;
+    overflow: visible;
+    padding: 75px 0px 0px;
+}
+
+#day04_bg05 .inner-bg {
+    background-color: #14141388;
+    padding: 87px 0px;
+}
+
+#faq {
+    margin: 25px auto;
+    width: 75%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.boxTitle.boxTitle_faq {
+    transition: 0.2s;
+}
+
+/* This renders the shadow */
+
+.boxTitle.boxTitle_faq:hover::before {
+    text-shadow: 0px 0px 20px var(--black);
+    content: attr(title);
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+/* This renders the text */
+
+.boxTitle.boxTitle_faq:hover::after {
+    content: attr(title);
+    background: linear-gradient(0deg, var(--black-2) -25%, var(--white-2) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#patchnotes {
+    margin: 25px auto 0px;
+    width: 70%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#patchnotes ul {
+    margin: 0;
+    padding-left: 0rem !important;
+}
+
+#patchnotes ul ul {
+    padding-left: 2rem !important;
+}
+
+#patchnotes li {
+    list-style-image: url(/cdn/assets/images/thatarrowfromthetfblog.svg);
+    font-size: 18px;
+}
+
+.questionBox {
+    padding: 20px 0px;
+    font-family: var(--default-font-stack);
+    border-bottom: 1px var(--black-2-transparent) solid;
+}
+
+.questionBox:last-child {
+    border-bottom: 0px;
+}
+
+.question {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.question::before {
+    content: "Q: ";
+}
+
+.answer {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 118%;
+}
+
+.answer::before {
+    content: "A: ";
+}
+
+@media only screen and (max-width: 1025px) {
+    #day04_bg01 {
+        background-image: url(/cdn/assets/images/tf_pages/digitaldirective/deployment/container04test.jpg) !important;
+    }
+}

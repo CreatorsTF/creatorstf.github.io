@@ -1,0 +1,23 @@
+
+main {
+	padding-top:56px;
+	padding-bottom:56px;
+}
+
+article {
+	background-color: var(--color-white);
+	height: auto;
+	padding: 1px 20px;
+	margin-top: 10px;
+}
+
+article img,
+article iframe {
+	width: 100%;
+}
+
+
+.container {
+	padding-left: 16px;
+	padding-right: 16px;
+}

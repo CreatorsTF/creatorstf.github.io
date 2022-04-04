@@ -1,0 +1,132 @@
+#day02_bg01 {
+    background-image: url(/cdn/assets/images/tf_pages/digitaldirective/robotaugmentations/container02test_nologo.jpg) !important;
+    height: 1130px;
+}
+
+.day02_first-text {
+    top: -65px !important;
+}
+
+#day02_bg03 {
+    padding-top: 25px;
+}
+
+/* #day02_bg03_2 {
+    padding: 0px;
+} */
+
+#day02_bg03_2 .inner-bg {
+    background-color: var(--black-2);
+    padding-bottom: 100px;
+}
+
+#day02_bg04 {
+    padding-top: 32px;
+}
+
+/* #day02_bg04_2 {
+    padding: 0px;
+} */
+
+#day02_bg04_2 .explanationText {
+    margin: 0 auto;
+}
+
+#day02_bg04_2 .inner-bg {
+    background-color: var(--black-2);
+    padding-bottom: 65px;
+}
+
+#day02_bg05 {
+    padding-top: 30px 0px 50px;
+}
+
+/* #day02_bg06 {
+    padding-bottom: 50px;
+} */
+
+#day02_bg06 .inner-bg {
+    background-color: var(--page-bg-color);
+    padding: 80px 0px 90px;
+    display: block;
+}
+
+.inner-bg-day02-committingconflicts {
+    height: 650px;
+    padding: 30px;
+    background-image: url(/cdn/assets/images/tf_pages/digitaldirective/robotaugmentations/committingconflicts.jpg);
+    background-position: center center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inner-bg-day02-committingconflicts .overlay {
+    background-image: url(/cdn/assets/images/tf_pages/digitaldirective/robotaugmentations/committingconflicts_overlay.png);
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+#list-holder {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#list-holder ul {
+    margin: 0;
+}
+
+#list-holder li {
+    list-style-image: url(/cdn/assets/images/thatarrowfromthetfblog.svg);
+    font-size: 16px;
+    padding: 0px 5px;
+}
+
+.inner-bg-day02-repurposedHardware {
+    height: 639px;
+    padding: 30px;
+    background-image: url(/cdn/assets/images/tf_pages/digitaldirective/robotaugmentations/repurposedhardware.jpg);
+    background-blend-mode: hard-light;
+    background-color: #777;
+    background-position: center center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inner-bg-day02-repurposedHardware .overlay {
+    background-image: url(/cdn/assets/images/tf_pages/digitaldirective/robotaugmentations/repurposedhardware_overlay.png);
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.inner-bg-day02-supplyDrop {
+    height: 580px;
+    padding: 30px;
+    background-image: url(/cdn/assets/images/tf_pages/digitaldirective/robotaugmentations/supplydrops.jpg);
+    background-position: 125px center;
+    align-items: center;
+}
+
+.inner-bg-day02-supplyDrop .fade-panel.L {
+    background: linear-gradient(90deg, var(--page-bg-color) 0%, transparent 100%);
+}
+
+@media only screen and (max-width: 1025px) {
+    #day02_bg01 {
+        background-image: url(/cdn/assets/images/tf_pages/digitaldirective/robotaugmentations/container02test.jpg) !important;
+    }
+    .inner-bg-day02-supplyDrop {
+        background-position: center !important;
+    }
+}

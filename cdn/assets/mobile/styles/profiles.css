@@ -1,0 +1,47 @@
+.profile_info img {
+    /* border-radius: 50%; */
+}
+.inv-page {
+    display: flex;
+	height: auto;
+    flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.backpack-slot {
+    width: 128px;
+    height: 128px;
+}
+
+.inv-control {
+	display: none;
+}
+
+.context-menu {
+	width: 100vh;
+	height: 100vh;
+	position: fixed;
+	top:0 !important;
+	left:0 !important;
+	background: none;
+	display: flex;
+
+	flex-flow: column;
+align-items: flex-start;
+  pointer-events: none;
+justify-content: center;
+
+}
+
+.context-menu ul, .context-menu li, .context-menu a {
+	display: flex;
+	flex-flow: column;
+  pointer-events: all;
+	
+}
+
+.context-menu li, .context-menu a {
+	height: 48px;
+justify-content: center;
+}
