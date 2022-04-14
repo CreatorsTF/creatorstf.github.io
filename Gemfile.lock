@@ -276,7 +276,6 @@ GEM
     unf_ext (0.0.8.1)
     unf_ext (0.0.8.1-x64-mingw32)
     unicode-display_width (1.8.0)
-    wdm (0.1.1)
     zeitwerk (2.5.4)
 
 PLATFORMS
@@ -285,10 +284,9 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  wdm (~> 0.1.0)
 
 RUBY VERSION
    ruby 2.7.5p203
 
 BUNDLED WITH
-   2.1.4
+   2.2.3

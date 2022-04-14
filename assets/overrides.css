@@ -1,0 +1,21 @@
+
+.header_container > *
+{
+    margin: 0 5mm;
+}
+
+.header_logotype
+{
+    height: inherit;
+    padding-top: 3mm;
+}
+
+.header_logotype img
+{
+    height: 15mm;
+}
+
+.header_navigation
+{
+    padding: initial !important;
+}
