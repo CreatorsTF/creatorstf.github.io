@@ -1,4 +1,12 @@
+:root
+{
+    --ctfdark-color-content: #aaa;
+    --ctfdark-color-foreground: #eee;
+    --ctfdark-color-background: #2b2826;
+}
 
+/** HOTFIX - Navigation bar positioning & sizing.
+************/
 .header_container > *
 {
     margin: 0 5mm;
@@ -19,3 +27,25 @@
 {
     padding: initial !important;
 }
+
+.main_navigation
+{
+    gap: 5mm;
+}
+/***************************************************/
+
+
+/** HOTFIX - Default browser styling overrides.
+/*******/
+body
+{
+    color: var(--ctfdark-color-foreground);
+    background: var(--ctfdark-color-background);
+    min-height: 100vh;
+}
+
+main
+{
+    color: var(--ctfdark-color-content);
+}
+/***************************************************/
