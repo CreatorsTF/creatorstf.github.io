@@ -44,6 +44,7 @@ layout: null
 	<link rel="stylesheet" href="{{site.url}}/assets/layout_shared.css">
 	<link rel="stylesheet" href="{{site.url}}/assets/quickplay.css">
 	<link rel="stylesheet" href="{{site.url}}/assets/econ_item_preview.css">
+	<link rel="stylesheet" href="{{site.url}}/assets/overrides.css">
 	<link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet">
 	<title>Home — Creators.TF</title>
 	<script src="{{site.url}}/assets/modals.min.js"></script>
@@ -3470,7 +3471,7 @@ layout: null
 				{% include nav-links.html %}
 			</div>
 		</nav>
-		<div class="main">
+		<main class="main">
 			<div class="flex flex-responsive bicol">
 				<div class="posts">
 					<header style="position: absolute; z-index: 3; right: 0;">
@@ -3483,8 +3484,9 @@ layout: null
 				{% include sidebar.html %}
 				{% endif %}
 			</div>
-			<div class="footer_pre"></div>
-			<footer class="footer flex flex-responsive">
+		</main>
+		<footer>
+			<div id="wrapper" class="flex">
 				<div class="col flex">
 					<a href="{{site.url}}/" target="_blank" rel="noreferrer noopener">
 						<div class="company_copyright creators">
@@ -3496,10 +3498,9 @@ layout: null
 							Creators.TF Team.</p>
 					</div>
 				</div>
-				<div class="col flex" style="margin-top:20px">
+				<div class="col flex">
 					<a href="https://valvesoftware.com/" target="_blank" rel="noreferrer noopener">
-						<div class="company_copyright valve">
-						</div>
+						<div class="company_copyright valve"></div>
 					</a>
 					<div class="copyright">
 						<p>Valve, the Valve logo, Steam, the Steam logo, Team Fortress, the Team Fortress logo are
@@ -3507,8 +3508,8 @@ layout: null
 							Valve Corporation. All rights belong to Valve Corporation.</p>
 					</div>
 				</div>
-			</footer>
-		</div>
+			</div>
+		</footer>
 	</div>
 
 
