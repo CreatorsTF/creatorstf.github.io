@@ -1,0 +1,29 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+---
+
+<html>
+    <BaseHead title="Smithereens">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #000;
+                overflow-x: hidden;
+            }
+            #letter {
+                background-image: url(/images/tf_campaign/directive/graymann.png);
+                width: 70%;
+                height: 162%;
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0 auto;
+                transform: rotate(5deg);
+            }
+        </style>
+    </BaseHead>
+    <body>
+        <div id="letter"></div>
+    </body>
+</html>

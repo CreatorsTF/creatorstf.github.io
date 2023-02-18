@@ -1,0 +1,47 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Sidebar from "../components/Sidebar.astro";
+import "../styles/layout_shared.css";
+import "../styles/overrides.css";
+
+export interface Props {
+	pageTitle: string,
+	pageDescription?: string
+}
+
+const { pageTitle, pageDescription } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={pageTitle} description={pageDescription} />
+	</head>
+	<body
+		class="background"
+		style="background: linear-gradient(transparent 50%, #000000e6 90%, black 100%), url(/images/header_banner_humidity_blur.jpg), black"
+	>
+		<div id="core">
+			<Header />
+			<main class="main">
+				<div class="flex flex-responsive bicol">
+					<div class="posts">
+						<header
+							style="position: absolute; z-index: 3; right: 0;"
+						>
+						</header>
+						<main role="main">
+							<div class="post">
+								<slot/>
+							</div>
+						</main>
+					</div>
+					<Sidebar />
+				</div>
+			</main>
+			<Footer />
+		</div>
+	</body>
+</html>

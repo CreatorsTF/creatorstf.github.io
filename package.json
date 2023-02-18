@@ -1,0 +1,17 @@
+{
+	"name": "creatorstf.github.io",
+	"type": "module",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/mdx": "^0.16.2",
+		"@astrojs/sitemap": "^1.0.1",
+		"astro": "^2.0.12"
+	}
+}

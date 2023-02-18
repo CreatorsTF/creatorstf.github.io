@@ -1,0 +1,66 @@
+---
+import type { CollectionEntry } from "astro:content";
+import FormattedDate from "../components/FormattedDate.astro";
+import "../styles/glide.core.min.css"
+
+type Props = CollectionEntry<"blog">["data"];
+
+const { title, pubDate, category } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<style>
+			.title {
+				font-size: 2em;
+				margin: 0.25em 0 0;
+			}
+			hr {
+				border-top: 1px solid #ddd;
+				margin: 1rem 0;
+			}
+			.last-updated-on {
+				font-style: italic;
+			}
+		</style>
+	</head>
+
+	<body>
+		<main>
+			<article class="post" tabindex="0">
+				<header class="post_header flex" role="heading">
+					<div class="flex">
+						<a class="avatar" href="#"
+							><img
+								src="/images/creators_logo_square.jpg"
+								alt="Creators.TF Blog"
+							/></a
+						>
+						<div class="post-info">
+							<a href="">
+								<h2>{title}</h2>
+							</a>
+							<span class="date-author">
+								<time>
+									<FormattedDate date={pubDate} />
+								</time>
+								•
+								<address
+									style="display: inline; font-style: normal;"
+								>
+									<a rel="author"
+										>Creators.TF
+										{category}</a
+									>
+								</address>
+							</span>
+						</div>
+					</div>
+				</header>
+				<div class="post-content cut">
+					<slot />
+				</div>
+			</article>
+		</main>
+	</body>
+</html>

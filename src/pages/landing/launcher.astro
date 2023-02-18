@@ -1,0 +1,308 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import "../../styles/landing/launcher.css";
+---
+
+<html>
+	<BaseHead
+		title="Creators.TF - Community Launcher"
+		description="An easier way to install, update and play TF2 content."
+	>
+		<link
+			rel="stylesheet"
+			href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+			integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+			crossorigin="anonymous"
+		/>
+	</BaseHead>
+	<body>
+		<a
+			href="https://github.com/CreatorsTF/Creators.TF-Community-Launcher"
+			target="_blank"
+			rel="noreferrer noopener"
+		>
+			<span id="githublabel"></span>
+		</a>
+		<header id="container01">
+			<div class="rellax" data-rellax-speed="-4" id="container01img">
+			</div>
+			<h1>Creators.TF Community Launcher</h1>
+			<div id="box-of-buttons">
+				<p>
+					Supports <span id="auto-updating-button"
+						>auto-updating<small>(?)</small></span
+					>
+				</p>
+				<a id="win_InstallerDownloadLink" download>
+					<button class="button">
+						<i class="mdi mdi-microsoft-windows"></i>
+						<span>Download for Windows</span>
+					</button>
+				</a>
+				<a id="linux_AppImageDownloadLink" download>
+					<button class="button">
+						<i class="mdi mdi-linux"></i>
+						<span>Download for Linux</span>
+					</button>
+				</a>
+				<br />
+				<p class="hover" id="other-downloads-button">
+					Other Downloads <i
+						class="mdi mdi-chevron-down"
+						style="top: 0px;"></i>
+				</p>
+				<section id="other-downloads">
+					<p>
+						<small>Doesn't support auto-updating</small>
+					</p>
+					<a id="win_UnpackedDownloadLink" download>
+						<button class="button smaller">
+							<i class="mdi mdi-microsoft-windows"></i>
+							<span>ZIP (x64)</span>
+						</button>
+					</a>
+					<a id="win_Unpacked32DownloadLink" download>
+						<button class="button smaller">
+							<i class="mdi mdi-microsoft-windows"></i>
+							<span>ZIP (x86)</span>
+						</button>
+					</a>
+					<a id="linux_DebDownloadLink" download>
+						<button class="button smaller">
+							<i class="mdi mdi-linux"></i>
+							<span>Deb</span>
+						</button>
+					</a>
+					<a id="linux_TarGzDownloadLink" download>
+						<button class="button smaller">
+							<i class="mdi mdi-linux"></i>
+							<span>tar.gz</span>
+						</button>
+					</a>
+				</section>
+				<br />
+			</div>
+			<div id="supported-version">
+				<p id="current-launcher-version">Current version: VERSION</p>
+				<p>
+					<a
+						href="https://github.com/CreatorsTF/Creators.TF-Community-Launcher/blob/master/changelog.md"
+						target="_blank"
+						rel="noreferrer noopener"
+					>
+						<i
+							class="mdi mdi-format-list-bulleted-square"
+							style="top: 0px;"></i> Read the Changelogs
+					</a>
+				</p>
+			</div>
+		</header>
+		<main role="main">
+			<div class="section container-md row">
+				<div class="col-lg">
+					<h2 class="sectionTitle">What is it?</h2>
+					<div class="separator l"></div>
+					<p class="sectionDesc">
+						Creators.TF Launcher is not just a way to deliver our
+						content in an automated and faster way, but it's also a
+						way for you, the user, to launch and play any TF2
+						content in a easier way, without having to extract stuff
+						every single time to X or Y folder, the launcher does
+						that automatically for you.
+					</p>
+				</div>
+				<div class="col-lg" style="padding: 0px;">
+					<img
+						src="/images/tf_pages/launcher/launcher.jpg?=v1"
+						alt="Launcher Screenshot"
+						title="Launcher Screenshot"
+					/>
+				</div>
+			</div>
+			<div class="section container-md row">
+				<div class="col-lg" style="padding: 0px;">
+					<img
+						src="/images/tf_pages/launcher/modsupport.jpg"
+						alt=""
+					/>
+				</div>
+				<div class="col-lg textRight">
+					<h2 class="sectionTitle">Other mod support</h2>
+					<div class="separator r"></div>
+					<p class="sectionDesc">
+						This launcher isn't only for us, we plan to include
+						support for other project mods in the future. This means
+						you would be able to easily add your own mods from a few
+						supported sources. This also means mods from select
+						partners who wish to have their content in the launcher.
+						Stay tuned for updates on these plans.
+					</p>
+				</div>
+			</div>
+			<div class="section container-md row" id="auto-updating">
+				<div class="col-lg">
+					<h2 class="sectionTitle">Auto-updating</h2>
+					<div class="separator l"></div>
+					<p class="sectionDesc">
+						In this launcher, we added the ability for it to
+						automatically update itself, so you don't have to
+						manually do it on every release. As of now, this is only
+						working via the .exe <i>(Windows)</i> and .AppImage <i
+							>(Linux)</i
+						> versions of the launcher. So, if you use the unpackaged
+						version, it won't work.
+					</p>
+				</div>
+				<div class="col-lg" style="padding: 0px;">
+					<img
+						src="/images/tf_pages/launcher/autoupdater.jpg?=v1"
+						alt=""
+					/>
+				</div>
+			</div>
+			<div class="section container-md row">
+				<div class="col-lg" style="padding: 0px;">
+					<a
+						href="https://github.com/CreatorsTF/Creators.TF-Community-Launcher"
+						target="_blank"
+						rel="noreferrer noopener"
+					>
+						<img
+							src="/images/github_logo_white.png"
+							alt="GitHub Logo"
+							title="GitHub Logo"
+						/>
+					</a>
+				</div>
+				<div class="col-lg textRight">
+					<h2 class="sectionTitle">Open source</h2>
+					<div class="separator r"></div>
+					<p class="sectionDesc">
+						The launcher is completely open source, so if you are a
+						developer and want to help with the development of this,
+						feel free to make a pull request! The code is hosted on <a
+							href="https://github.com/CreatorsTF/Creators.TF-Community-Launcher"
+							target="_blank">GitHub</a
+						>. We accept everything from backend to UI changes.
+					</p>
+				</div>
+			</div>
+			<div class="section container-md row" style="padding: 35px 10px;">
+				<div class="col-lg textCenter">
+					<h2 class="sectionTitle" style="font-size: 65px;">
+						F.A.Q - Frequently Asked Questions
+					</h2>
+					<div class="faqBox">
+						<h3 class="faqQ">
+							How is there a F.A.Q. for something that just
+							released?
+						</h3>
+						<p class="faqA">
+							<a
+								href="https://www.youtube.com/watch?v=8YUWDrLazCg"
+								target="_blank"
+								rel="noreferrer noopener"
+								>In this case, "F.A.Q." stands for "Fully
+								Anticipated Questions".</a
+							>
+						</p>
+					</div>
+					<div class="faqBox">
+						<h3 class="faqQ">
+							Both my browser and O.S. says the installer version
+							is dangerous. Why is that?
+						</h3>
+						<p class="faqA">
+							During the process of compiling the launcher, we
+							didn't do code signing, that's why your browser and
+							Windows, may identify it as being <i>"dangerous"</i
+							>. We don't have a digital signature right now. If
+							we do get one in the future, this section will be
+							updated
+						</p>
+					</div>
+					<div class="faqBox">
+						<h3 class="faqQ">
+							My launcher doesn't auto-update itself. Why?
+						</h3>
+						<p class="faqA">
+							You must be using the unpacked version. The only way
+							to automatically receive launcher's updates is by
+							downloading the <a
+								href="https://github.com/CreatorsTF/Creators.TF-Community-Launcher/releases/latest"
+								target="_blank"
+								rel="noreferrer noopener">installer</a
+							> version of it. If you continue to use the unpacked
+							ZIP version, you will have to manually update on every
+							release.
+						</p>
+					</div>
+					<div class="faqBox">
+						<h3 class="faqQ">It's all buggy! Why?!</h3>
+						<p class="faqA">
+							We are releasing this launcher in a very early
+							stage, basically a public development stage, all
+							types of bugs are expected to come. With lots of
+							people using it, it will be way easier to track and
+							fix them. If you wanna contribute to the development
+							of this, look up the <a
+								href="https://github.com/CreatorsTF/Creators.TF-Community-Launcher"
+								target="_blank"
+								rel="noreferrer noopener"
+								>source code repository at GitHub</a
+							>.
+						</p>
+					</div>
+					<div class="faqBox">
+						<h3 class="faqQ">
+							I found a bug, where do I report?<br />I wanna
+							submit feedback, where do I submit it?
+						</h3>
+						<p class="faqA">
+							You can either email us on <a
+								href="mailto:support@creators.tf"
+								>support@creators.tf</a
+							> with the subject <i>"Launcher Bug/Feedback"</i> or
+							open an issue on <a
+								href="https://github.com/CreatorsTF/Creators.TF-Community-Launcher/issues"
+								target="_blank"
+								rel="noreferrer noopener">GitHub</a
+							>.
+						</p>
+					</div>
+					<small style="color: #CCC;"
+						>This section may be updated at any time with new
+						questions</small
+					>
+				</div>
+			</div>
+		</main>
+		<footer class="container-md row" id="footer">
+			<div class="col-lg">
+				<div style="float: left; height: 55px;">
+					<img
+						src="/images/creators_logo_gear_fin-bwoutline_orange.svg"
+						width="100"
+					/>
+				</div>
+				Creators.TF LTD 2019 - <span id="copyright-year-field"
+					>2022</span
+				><br />Creators.TF, the Creators.TF logo and Creators.TF are
+				developed, founded and owned by the Creators.TF Team.
+			</div>
+			<div class="col-lg">
+				<div style="float: left; height: 75px;">
+					<img src="/images/valve.svg" width="100" />
+				</div>
+				Valve, the Valve logo, Steam, the Steam
+				logo, Team Fortress, the Team Fortress logo are trademarks and/or
+				registered trademarks of Valve Corporation. We are not affiliated
+				with Valve Corporation. All rights belong to Valve Corporation.
+			</div>
+		</footer>
+	</body>
+</html>

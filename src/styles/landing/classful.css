@@ -1,0 +1,683 @@
+body {
+  overflow-x: hidden;
+  background-image: url(/images/tf_pages/classful/main_bg.jpg);
+  background-repeat: repeat-x;
+  background-color: #56504C;
+  /* background-size: 68%; */
+  /* background-position: 217px 0px; */
+  background-position: top center;
+  margin: 0;
+  padding: 0;
+}
+
+/* CUSTOM SCROLLBAR STYLE BECAUSE THE ONE IN STYLE.CSS BLENDS WITH THE PAGE'S BG */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* CUSTOM SCROLLBAR STYLE BECAUSE THE ONE IN STYLE.CSS BLENDS WITH THE PAGE'S BG */
+
+#wrapper {
+  margin: 25px auto;
+  width: 892px;
+}
+
+p {
+  margin: 0px 0px 5px 0px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #ddd;
+}
+
+p:last-child {
+  margin: 0 auto;
+}
+
+.map_authors {
+  font-size: 18px;
+}
+
+.steamworkshoplogoweapons {
+  width: 106px;
+  margin: -55px;
+  transform: rotate(-10deg);
+  transition: 0.2s;
+}
+
+.steamworkshoplogoweapons:hover {
+  transform: rotate(-5deg) scale(1.05);
+}
+
+#container01 {
+  width: 892px;
+  height: 655px;
+  margin: 0 auto;
+}
+
+#container01_img {
+  position: relative;
+  top: -138px;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+#container01_tflogo {
+  background-image: url(/images/tf_pages/classful/tficon.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 137px;
+  height: 28px;
+  position: relative;
+  top: 29px;
+  left: 60px;
+  z-index: 2;
+}
+
+#container01_tflogo:hover {
+  background-position: bottom;
+}
+
+#container01_ctflogo {
+  background-image: url(/images/tf_pages/classful/ctficon.png);
+  background-size: 57%;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 136px;
+  height: 17px;
+  position: relative;
+  top: -5px;
+  left: 730px;
+  z-index: 2;
+}
+
+#container01_ctflogo:hover {
+  background-position: bottom;
+}
+
+#container01_text {
+  width: 525px;
+  position: relative;
+  top: 462px;
+  left: 295px;
+  font-size: 14px;
+  z-index: 2;
+}
+
+#slider {
+  margin: 0 auto -23px auto;
+  width: 800px;
+  height: 450px;
+  position: relative;
+  top: -58px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+#container01labeltocontainer02 {
+  width: 850px;
+  margin: 0 auto;
+  position: relative;
+  top: 191px;
+  left: 19px;
+  z-index: 99;
+  pointer-events: none;
+}
+
+.container_divisor_made_out_of_steel {
+  margin: 0 auto;
+  width: 855px;
+  height: 42px;
+  background-image: url(/images/tf_pages/classful/divisor_made_out_of_steel.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  z-index: 999;
+}
+
+.container_divisor_made_out_of_metal {
+  margin: 0 auto;
+  width: 875px;
+  height: 72px;
+  background-image: url(/images/tf_pages/classful/divisor_made_out_of_metal.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  z-index: 999;
+}
+
+/* MAPS */
+
+#container02 {
+  background-image: url(/images/tf_pages/classful/2.jpg);
+  width: 892px;
+  height: 555px;
+  margin: 0 auto;
+}
+
+#databank_previews {
+  width: 180px;
+  position: relative;
+  top: 427px;
+  left: 70px;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.map_preview_pic_thumb {
+  width: 80px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  border: 1px #fff solid;
+}
+
+.map_preview_pic_thumb:hover {
+  border: 1px #6969FF solid;
+  cursor: pointer;
+}
+
+#container02_text {
+  width: 560px;
+  position: relative;
+  top: 328px;
+  left: 253px;
+}
+
+#container03 {
+  background-image: url(/images/tf_pages/classful/3.jpg);
+  width: 892px;
+  height: 548px;
+  margin: 0 auto;
+}
+
+#rumble_previews {
+  width: 180px;
+  position: relative;
+  top: 413px;
+  left: 70px;
+  display: flex;
+  flex-flow: wrap;
+}
+
+#container03_text {
+  width: 560px;
+  position: relative;
+  top: 315px;
+  left: 253px;
+}
+
+#container04 {
+  background-image: url(/images/tf_pages/classful/4.jpg);
+  width: 892px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#sludgepit_previews {
+  width: 180px;
+  position: relative;
+  top: 428px;
+  left: 70px;
+  display: flex;
+  flex-flow: wrap;
+}
+
+#container04_text {
+  width: 560px;
+  position: relative;
+  top: 326px;
+  left: 252px;
+}
+
+/* WEAPONS SECTION */
+
+#container05label_main {
+  margin: 0 auto -50px auto;
+  position: relative;
+  top: -50px;
+  left: -110px;
+  pointer-events: none;
+}
+
+#container05 {
+  /* background-image: url(/images/tf_pages/classful/5.jpg); */
+  /* width: 892px; */
+  background-color: #988576;
+  width: 800px;
+  height: 1780px;
+  margin: 75px auto 0px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+
+#container05_inside {
+  background-color: #141615;
+  margin: 0 auto;
+  width: 675px;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+  color: #111;
+}
+
+.weaponname {
+  width: 650px;
+  margin: 5px auto 1px auto;
+  color: #EEE;
+  font-size: 45px;
+  font-family: TF2 Build, Arial, sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.weaponstuff {
+  width: 600px;
+  margin: 0px auto 25px auto;
+  text-align: center;
+}
+
+.separator {
+  margin: 20px auto 10px auto;
+  width: 665px;
+  height: 1px;
+  /* background: linear-gradient(90deg, transparent 5%, #1B1716 50%, transparent 95%); */
+  background: linear-gradient(90deg, transparent 5%, #908380 50%, transparent 95%);
+}
+
+.weaponstuff.description {
+  margin: 0px auto 10px auto;
+  color: #CCC;
+  font-size: 16px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.weaponstuff.description.class {
+  margin: 10px auto;
+  font-size: 18px;
+}
+
+.weaponstats {
+  margin: 0px auto 2px auto;
+  font-size: 18px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  display: block;
+  font-family: Arial, sans-serif;
+}
+
+.weaponstats.bad {
+  /* color: #E44343; */
+  color: #D83636;
+}
+
+.weaponstats.good {
+  /* color: #6565DE; */
+  color: #7EA9D1;
+}
+
+.weaponcredits {
+  margin: 10px auto;
+  font-size: 18px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  display: block;
+  color: #CCC;
+  font-family: Arial, sans-serif;
+}
+
+#thewasplauncher {
+  margin: 0px auto;
+  width: 416px;
+  height: 310px;
+  background-image: url(/images/tf_pages/classful/thewasplauncher.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#thebolshevikbomber {
+  margin: 0 auto;
+  width: 448px;
+  height: 227px;
+  background-image: url(/images/tf_pages/classful/thebolshevikbomber.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#thecarvedcutter {
+  margin: 0 auto;
+  width: 384px;
+  height: 277px;
+  background-image: url(/images/tf_pages/classful/thecarvedcutter.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#container05labeltocontainer06 {
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+  left: -95px;
+  pointer-events: none;
+}
+
+#container06 {
+  margin: 141px auto 0px auto;
+  background-image: url(/images/tf_pages/classful/chist.png);
+  background-size: 110%;
+  background-position: -10px 0px;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 500px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+#container06_fade {
+  width: 800px;
+  height: 500px;
+  background: linear-gradient(90deg, #1B1716 30%, transparent 70%);
+}
+
+#container06_strangerdesc {
+  margin: 0px 25px;
+  width: 385px;
+  height: 500px;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+  font-size: 16.5px;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+}
+
+#container06labeltocontainer07 {
+  margin: 0 auto;
+  position: relative;
+  top: -25px;
+  left: -35px;
+  pointer-events: none;
+}
+
+#container07 {
+  margin: 150px auto 0px auto;
+  width: 892px;
+  height: auto;
+  font-family: Arial, sans-serif;
+}
+
+.container_video {
+  width: 800px;
+  height: 530px;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  top: -530px;
+}
+
+.container_video video {
+  width: 100%;
+}
+
+#container07_section1 {
+  margin: 0 auto;
+  /* background-image: url(https://creators.tf/images/tf_pages/hazardousenvironments/creatorstf_hzrdsenv_street_wallpaperpreview.jpg); */
+  background-size: 100%;
+  background-position: -80px -80px;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 530px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+#container07_section2 {
+  margin: 0 auto;
+  /* background-image: url(https://creators.tf/images/tf_pages/hazardousenvironments/creatorstf_hzrdsenv_street_wallpaperpreview.jpg); */
+  background-size: 100%;
+  background-position: 230px -80px;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 325px;
+  box-shadow: 0px 0px 10px #000;
+  overflow: hidden;
+}
+
+#container07_section3 {
+  margin: 0 auto;
+  background-image: url(/images/tf_pages/classful/contracker.png);
+  background-size: 100%;
+  background-position: -245px -95px;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 380px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+.container07_fadeR {
+  width: 800px;
+  height: 530px;
+  background: linear-gradient(to left, #1B1716 15%, transparent 100%);
+}
+
+.container07_fadeL {
+  width: 800px;
+  height: 530px;
+  background: linear-gradient(to right, #1B1716 15%, transparent 100%);
+}
+
+.container07_textL {
+  width: 325px;
+  height: 530px;
+  color: #CCC;
+  text-align: center;
+  margin: 0px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+}
+
+.container07_textR {
+  width: 325px;
+  height: 530px;
+  color: #CCC;
+  text-align: center;
+  float: right;
+  margin: 0px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+}
+
+#container_credits {
+  background-color: #dbdbdb;
+  margin: 20px auto 0px auto;
+  width: 760px;
+  height: 1605px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+#container_credits_ctf_header {
+  background-image: url(/images/tf_pages/classful/creatorstfteam_credits_header_30.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+#container_credits_contributors_header {
+  background-image: url(/images/tf_pages/classful/contributors_credits_header_30.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30px;
+  margin: 50px 0px 10px 0px;
+}
+
+.container_credits_inner {
+  margin: 10px auto 25px auto;
+  margin: 0 auto;
+  width: 100%;
+  /* height: auto; */
+  display: flex;
+}
+
+.people {
+  /* background-color: #766B5E; */
+  background-color: #695F54;
+  width: 100%;
+  padding: 5px;
+  margin: 3px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border: 1px #FFF8EC solid;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+  height: 52px;
+}
+
+.people:hover {
+  background-color: #924738;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.people:first-child {
+  margin-left: 0px;
+}
+
+.people:last-child {
+  margin-right: 0px;
+}
+
+.peoplePic {
+  display: flex;
+  float: left;
+}
+
+.peoplePic img {
+  width: 50px;
+  border-radius: 3px;
+  border: 1px transparent solid;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+
+.people:hover img {
+  border: 1px #B5AEA2 solid;
+}
+
+.peopleInfo {
+  float: left;
+  margin-left: 5px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  color: #EEE;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.peopleName {
+  width: 100%;
+  /* font-family: DIN Regular, Arial, sans-serif; */
+  font-size: 23px;
+  display: block;
+  word-break: break-all;
+}
+
+.peopleDesc {
+  width: 100%;
+  /* font-family: DIN Light, Arial, sans-serif; */
+  font-size: 16px;
+  display: block;
+}
+
+#label_container_patchnotes {
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+  left: -50px;
+  pointer-events: none;
+}
+
+#container_patchnotes {
+  background-color: #988576;
+  margin: 0 auto;
+  width: 800px;
+  height: fit-content;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+
+#container_patchnotes_inside {
+  background-color: #DAD5D1;
+  margin: -42px auto;
+  width: 680px;
+  height: fit-content;
+  /* padding: 85px 0px 35px 0px; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+  color: #111;
+}
+
+#container_patchnotes_inside ul {
+  margin: 0px auto;
+  font-size: 18px;
+  text-shadow: 1px 1px 0 #00000005;
+}
+
+#footerbox {
+  margin: 0 auto;
+  width: 780px;
+  background-color: #332A29;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+  display: flex;
+  padding: 10px 10px;
+  flex: 1;
+}
+
+#footerboxlogovalve {
+  background-image: url(/images/tf_pages/classful/valve_logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0px 1px;
+  width: 215px;
+  height: auto;
+}
+
+#footerboxlogocreators {
+  background-image: url(/images/creators_logo_gear_fin-bwoutline_orange.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  width: 215px;
+  height: auto;
+}
+
+.footerboxlogodesc {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  color: #ccc;
+  margin: 0px 10px;
+}
+
+.footerboxlogodesc:last-child {
+  margin: 0px 0px 0px 10px;
+}

@@ -1,0 +1,70 @@
+---
+import Layout from "../../layouts/Default.astro";
+import { getCollection, CollectionEntry } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+
+export function getStaticPaths() {
+  return [
+    { params: { category: 'blog' } },
+    { params: { category: 'updates' } }
+  ];
+}
+
+const { category = 'blog' } = Astro.params;
+const posts = (await getCollection('blog')).sort(
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
+---
+
+<Layout pageTitle="Posts — Creators.TF Archives">
+	<div class="mount">
+		<h1 style="display: inline">Historic Website Posts</h1>
+		<div class="flex" style="flex-wrap: wrap">
+			<p>A complete list of all blog posts, update posts and patch notes posted on Creators.TF as originally posted.</p>
+			<br>
+			<a class="tf-button2 centered-text" href="/blog">
+				<label>All Posts</label>
+			</a>
+			<a class="tf-button2 centered-text" href="/blog/blog">
+				<label>Blog Posts</label>
+			</a>
+			<a class="tf-button2 centered-text" href="/blog/updates">
+				<label>Update Posts</label>
+			</a>
+		</div>
+		<div class="post-content">
+			<ul class="list-base">
+				{
+					posts
+						.filter((post) => post.data.category.toLowerCase() == category)
+						.map((post) => (
+						<li class={post.data.category.toLowerCase()}>
+							<FormattedDate date={post.data.pubDate} />
+							<a href={`/blog/${post.slug}/`}>
+								{post.data.category.toUpperCase()}: {post.data.title}
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	ul {
+		list-style-type: none;
+		padding: unset;
+	}
+	ul li {
+		display: flex;
+	}
+	ul li :global(time) {
+		flex: 0 0 130px;
+		font-style: italic;
+		color: #595959;
+	}
+	ul li a:visited {
+		color: #8e32dc;
+	}
+</style>

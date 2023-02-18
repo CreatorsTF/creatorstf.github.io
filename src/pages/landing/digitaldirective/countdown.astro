@@ -1,0 +1,251 @@
+---
+import BaseHead from "../../../components/BaseHead.astro";
+---
+
+<!DOCTYPE html>
+<html>
+	<BaseHead title="Security Warning">
+		<link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.7.55/css/materialdesignicons.min.css">
+		<style>
+            @font-face {
+                src: url("/fonts/Boris_Black_Bloxx.ttf");
+                font-family: "Boris Black Bloxx";
+            }
+
+            @font-face {
+                src: url("/fonts/TF2_Build.ttf");
+                font-family: "TF2 Build";
+            }
+
+            .time > ol {
+                list-style: none;
+                display: inline;
+                padding: 0;
+                font-size: 0;
+            }
+
+            .time > ol > li.hide {
+                display: none;
+            }
+            .time > ol > li#h:not(.hide):after,
+            .time > ol > li#m:not(.hide):after {
+                content: ':';
+            }
+
+            .time > ol > li#s {
+                width: 2.25rem;
+            }
+            .time > ol > li#ms {
+                width: 4rem;
+            }
+
+            .time > ol > li#ms:not(.hide):before {
+                content: '.';
+            }
+
+            .time > ol > li {
+                display: inline-block;
+                font-size: 3vh;
+            }
+
+            .instruction {
+                display: flex;
+                flex-direction: column;
+                margin: 3vh auto 0px auto;
+            }
+
+            .pre-progress {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                font-family: "TF2 Build", sans-serif;
+                font-size: 3vh;
+            }
+
+            .pre-progress #symb {
+                display: inline-block;
+                width: .5rem;
+            }
+
+            .pre-progress #symb:before {
+                content: '/';
+                animation-name: spinny-thing;
+                animation-duration: 350ms;
+                animation-iteration-count: infinite;
+            }
+
+            .pre-progress .time {
+                display: inline-block;
+            }
+
+            .progress {
+                background: black;
+                border: 0.25vh solid white;
+                padding: 0.25vh;
+                width: 100%;
+                margin-bottom: 2vh;
+            }
+
+            .progress > div {
+                background: green;
+                height: 1.9vh;
+            }
+
+            html, body {
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-image: url(/images/tf_pages/digitaldirective/day1poster.jpg);
+                background-size: cover;
+                background-color: #333;
+                background-blend-mode: multiply;
+                background-position: center center;
+                background-repeat: no-repeat;
+                color: #EEE;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            nav, main {
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            /* main {
+                display: flex;
+                justify-content: center;
+            } */
+
+            a {
+                text-decoration: none;
+                color: #EEE;
+            }
+
+            p {
+                margin: 0px auto;
+                font-family: "Boris Black Bloxx", sans-serif;
+                font-size: 3vh;
+            }
+            h1 {
+                font-family: "Boris Black Bloxx", sans-serif;
+                font-weight: normal;
+                font-size: 7vh;
+                margin: 0 auto;
+                text-align: center;
+                line-height: 100%;
+            }
+
+            .decor-frame {
+                background: url(/images/paper.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                padding: 2rem;
+                position: relative;
+                max-width: 1000px;
+            }
+
+            .decor-frame:after {
+                content: '';
+                background: url(/images/paperOver.png);
+                background-position: center;
+                background-size: contain;
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+                background-repeat: no-repeat;
+            }
+
+            #wrapper {
+                margin: 0 auto;
+                width: 55%;
+            }
+
+            .video {
+                position: relative;
+                padding: 0 0 56.3% 0;
+                -webkit-filter: drop-shadow(0px 0px 10px #111);
+                filter: drop-shadow(0px 0px 10px #111);
+            }
+
+            .video-child {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .videoPos {
+                margin: 0 auto;
+                padding: 5vh;
+                background-image: url(/images/paper.png);
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                position: relative;
+            }
+
+            .videoPos .overlay {
+                margin: 0 auto;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0px;
+                top: 0;
+                z-index: 99999;
+                background-image: url(/images/paperOver.png);
+                background-position: center center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                pointer-events: none;
+            }
+        </style>
+	</BaseHead>
+    <body>
+        <div id="wrapper">
+            <nav>
+                <a href="/landing/digitaldirective">
+                    <h1>DIGITAL DIRECTIVE IS OUT!</h1>
+                </a>
+                <section class="instruction">
+                    <div class="pre-progress">
+                        <label id="tl" for="progress">Orders placed!</label>
+                        <div>
+                            <div class="time">
+                                <span>RELEASED!</span>
+                            </div>
+                            <i class="mdi mdi-check-bold"></i>
+                        </div>
+                    </div>
+                    <div class="progress" id="tp">
+                        <div></div>
+                    </div>
+                    <p><a href="/landing/digitaldirective">Operation: Digital Directive</a></p>
+                </section>
+            </nav>
+            <main role="main">
+                <div class="videoPos">
+                    <div class="overlay"></div>
+                    <div class="video">
+                        <iframe class="video-child" src="https://www.youtube.com/embed/OaZoKQcHCuM" title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="allowfullscreen">
+                        </iframe>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

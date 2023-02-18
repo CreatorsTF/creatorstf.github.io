@@ -1,0 +1,46 @@
+body {
+    background-color: #000;
+}
+
+.root {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/tf_pages/radio/background.png?v=1);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    flex: 100%;
+}
+
+.control_panel {
+    flex: 210px;
+    background: #292929;
+    background-color: #292929aa;
+    color: #fff;
+    user-select: none;
+}
+
+.control_panel_wrapper {
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+a {
+    color: red;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}

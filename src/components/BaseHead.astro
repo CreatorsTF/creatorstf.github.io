@@ -1,0 +1,111 @@
+---
+// Those styles are included on all pages through the use of the <BaseHead /> component.
+import "../styles/style.css";
+import "../styles/fonts.css";
+
+export interface Props {
+	title: string;
+	description?: string;
+	icon?: string;
+	image?: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const {
+	title,
+	description = "The Creators.TF archive website.",
+	icon = "/favicon.ico",
+	image = "/images/creators_logo_rectangle.jpg",
+} = Astro.props;
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/png" href={icon} />
+<meta name="generator" content={Astro.generator} />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL(image, Astro.url)} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Global External Scripts -->
+<link
+	href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css"
+	rel="stylesheet"
+/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+<!-- 
+	CAROUSEL SCRIPT - taken from app.js
+-->
+<script is:inline>
+	document.addEventListener("DOMContentLoaded", function (event) {
+		// Working with Sliders
+		let sliders = document.querySelectorAll("[image-carousel]");
+		for (let slider of sliders) {
+			slider.setAttribute("class", "glide");
+			slider.innerHTML = `
+	<div class="glide">
+	  <div class="glide__track" data-glide-el="track">
+		<div class="glide__slides">
+		  ${slider.innerHTML}
+		</div>
+	  </div>
+
+	  <div class="glide__arrows" data-glide-el="controls">
+		<button class="glide__arrow glide__arrow--left" data-glide-dir="<">&lt;</button>
+		<button class="glide__arrow glide__arrow--right" data-glide-dir=">">&gt;</button>
+	  </div>
+	</div>`;
+			new Glide(slider, {
+				type: "carousel",
+				gap: 0,
+			}).mount();
+		}
+
+		// CSS cursor tracking trickery
+		//   idea from https://www.30secondsofcode.org/css/s/mouse-cursor-gradient-tracking
+		for (const btn of document.getElementsByClassName("tf-button")) {
+			btn.addEventListener("mousemove", ({ clientX: x, clientY: y }) => {
+				let rect = btn.getBoundingClientRect();
+				let X = ((x - rect.left - rect.width / 2) / rect.width) * 10;
+				let Y = ((y - rect.top - rect.height / 2) / rect.height) * 10;
+				btn.style.setProperty("--x", `calc(${X}% + 50%)`);
+				btn.style.setProperty("--y", `calc(${Y}% + 50%)`);
+			});
+		}
+
+		const VIEWPORT_WIDTH_SAFE = 1200;
+		if (screen.width <= VIEWPORT_WIDTH_SAFE) {
+			if (!(localStorage.getItem("pref-show-sidebar") ?? true)) {
+				Accessibility_HideSidebar();
+			}
+
+			window.setTimeout(() => Accessibilty_SidebarAnimations(true), 1);
+		}
+	});
+</script>
+
+<slot/>

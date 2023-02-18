@@ -1,0 +1,123 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import "../../styles/landing/promo.css";
+
+// Replicated tf_page_promo.php in TS.
+const today = new Date();
+const lastUpdateDate = new Date("2017-10-20");
+
+const timeDiff = today.getTime() - lastUpdateDate.getTime();
+const dayDiff = Math.floor(timeDiff / (1000 * 3600 * 24));
+const dayArr = Array.from(String(dayDiff), Number);
+---
+
+<html>
+	<BaseHead
+		title="Creators.TF Promotional Page"
+		description="The goal of this project is to try and make unofficial updates to our beloved game with the help of community created content and, very importantly with the authentic Team Fortress 2 spirit in mind."
+	/>
+	<body>
+		<div class="bg-wrapper" id="bg1">
+			<div class="container noborder noshadow" id="container_1">
+				<div id="timer">
+					<div class={`timer_element timer_${dayArr[0]}`}></div>
+					<div class={`timer_element timer_${dayArr[1]}`}></div>
+					<div class={`timer_element timer_${dayArr[2]}`}></div>
+					<div class={`timer_element timer_${dayArr[3]}`}></div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-wrapper" id="bg2">
+			<div class="container noborder noshadow" id="container_2">
+				<div class="text">
+					<p>
+						Over the past few years, Team Fortress 2 has been
+						receiving far less attention from developers, yet the
+						game is still very much relevant. While we could
+						continue to wait in endless anticipation, we can also
+						take the game into our own hands! The goal of this
+						project is to try and make unofficial updates to our
+						beloved game with the help of community created content
+						and, very importantly - with the authentic Team Fortress
+						2 spirit in mind.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="bg-wrapper" id="bg3">
+			<div class="container noborder noshadow" id="container_3"></div>
+		</div>
+		<div class="bg-wrapper" id="bg4">
+			<div class="container noborder noshadow" id="container_4">
+				<div class="text">
+					Say hello to «Community Quickplay Servers»! These custom
+					game servers will be launched all over the world. Thus,
+					being almost anywhere, you will be able to connect to these
+					servers and try out the hottest community created content we
+					could find! The exact location of these servers will be
+					discussed with project participants. The idea is to try and
+					push out full-fledged community-generated updates right to
+					these servers and enjoy the hell out of it!
+				</div>
+			</div>
+		</div>
+		<div class="bg-wrapper" id="bg5">
+			<div class="container noborder noshadow" id="container_5"></div>
+		</div>
+		<div class="bg-wrapper" id="bg6">
+			<div class="container noborder noshadow" id="container_6">
+				<div class="text">
+					In these updates we will add community content through
+					special server modifications. Thus you will be able to try
+					out community created maps, cosmetics, weapons, taunts,
+					skins, unusual effects and much more! You will also be able
+					to get many of those through community created contracts
+					system, which is very much similar to what Valve had
+					presented to us. The process of reviewing community created
+					content is described in the diagram below:
+					<img src="/images/tf_pages/promo/action_scheme.png" />
+				</div>
+			</div>
+		</div>
+		<div class="bg-wrapper" id="bg8">
+			<div class="container noborder noshadow" id="container_8">
+				<div class="text">
+					This project is a great undertaking. That is why we address
+					you, the TF2 community! We need the help of everyone who can
+					and wants to support this project! There are multiple ways
+					you can help out. From contributing items, maps or anything
+					else in our <a href="">Workshop</a>
+					to becoming a <a href="">Patreon</a> supporter which helps us
+					cover server costs! <br />
+					<br />Check out our social media at stay tuned for any
+					updates!<br />
+					<a href="">Steam Group</a>
+					• <a href="">YouTube</a>
+					• <a href="">Instagram</a>
+					• <a href="">Twitter</a>
+					• <a href="">Discord</a>
+					• <a href="">VKontakte</a>
+					<br />
+					<p>
+						Credits: <br />
+						- <a
+							href="http://steamcommunity.com/profiles/76561198188657895"
+							>Moonly Days</a
+						> (Website, Organization, Layout, Graphics)<br />
+						- <a
+							href="http://steamcommunity.com/profiles/76561198070719072"
+							>Dr. Dze</a
+						> (Graphics, Texts)<br />
+						- <a
+							href="http://steamcommunity.com/profiles/76561198327385902"
+							>Major Art</a
+						> (Graphics)<br />
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="bg-wrapper" id="bg7">
+			<div class="container noborder noshadow" id="container_7"></div>
+		</div>
+	</body>
+</html>

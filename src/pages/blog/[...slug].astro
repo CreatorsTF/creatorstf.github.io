@@ -1,0 +1,28 @@
+---
+import { CollectionEntry, getCollection } from 'astro:content';
+import BlogPost from '../../layouts/BlogPost.astro';
+import Layout from "../../layouts/Default.astro"
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+	return posts.map((post) => ({
+		params: { slug: post.slug },
+		props: post,
+	}));
+}
+type Props = CollectionEntry<'blog'>;
+
+const post = Astro.props;
+const allPosts = await getCollection('blog');
+const nextId = allPosts.findIndex((pst) => pst.data.title === post.data.title) + 1
+
+const { Content } = await post.render();
+---
+
+<Layout pageTitle={post.data.title}>
+	<BlogPost {...post.data}>
+		<Content/>
+	</BlogPost>
+	<!-- <a href={`/blog/${allPosts[nextId].slug}`}>next post</a> -->
+</Layout>
+

@@ -1,0 +1,1224 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import "../../styles/landing/dd/day1.css";
+---
+
+<html>
+    <BaseHead
+        title="Creators.TF - Digital Directive - Maps and Missions (Day 1)"
+        description="Announcing, Operation: Digital Directive, a community-made Mann vs Machine campaign created by Creators.TF and Potato’s Custom MvM Servers. With 30 new missions across 22 maps, plus some brand new gameplay additions, this is gonna be one hell of a campaign across the world!"
+        icon="/images/tf2_square_event_mvm.png"
+    >
+        <link href="https://fonts.gstatic.com" rel="preconnect" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+        />
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@glidejs/glide"
+        ></script>
+    </BaseHead>
+    <body>
+        <div id="app">
+            <section id="bg01" class="bg">
+                <div id="logo-video-holder">
+                    <video muted="" autoplay="" loop="" preload="auto">
+                        <source
+                            src="/images/tf_pages/digitaldirective/digital_directive_logo_animated.webm"
+                            type="video/webm"
+                        />
+                    </video>
+                </div>
+            </section>
+            <section id="bg02" class="bg top">
+                <div id="day-selector">
+                    <a href="/landing/digitaldirective">
+                        <div class="dayPanel first day1 active selected">
+                            <video
+                                class="dayPanelVideo selectedVideo"
+                                muted=""
+                                autoplay=""
+                                loop=""
+                                preload="auto"
+                            >
+                                <source
+                                    src="/images/tf_pages/digitaldirective/day1_animated.webm"
+                                    type="video/webm"
+                                />
+                            </video>
+                        </div>
+                    </a>
+                    <a href="/landing/digitaldirective/augmentations">
+                        <div class="dayPanel second day2 active">
+                            <video
+                                class="dayPanelVideo"
+                                muted=""
+                                autoplay=""
+                                loop=""
+                                preload="auto"
+                            >
+                                <source
+                                    src="/images/tf_pages/digitaldirective/day2_animated.webm"
+                                    type="video/webm"
+                                />
+                            </video>
+                        </div>
+                    </a>
+                    <a href="/landing/digitaldirective/medalofhonor">
+                        <div class="dayPanel third day3 active">
+                            <video
+                                class="dayPanelVideo"
+                                muted=""
+                                autoplay=""
+                                loop=""
+                                preload="auto"
+                            >
+                                <source
+                                    src="/images/tf_pages/digitaldirective/day3_animated.webm"
+                                    type="video/webm"
+                                />
+                            </video>
+                        </div>
+                    </a>
+                    <a href="/landing/digitaldirective/deployment">
+                        <div class="dayPanel fourth day4 active">
+                            <video
+                                class="dayPanelVideo"
+                                muted=""
+                                autoplay=""
+                                loop=""
+                                preload="auto"
+                            >
+                                <source
+                                    src="/images/tf_pages/digitaldirective/day4_animated.webm"
+                                    type="video/webm"
+                                />
+                            </video>
+                        </div>
+                    </a>
+                </div>
+                <div class="bgInner videoPos">
+                    <div class="overlay"></div>
+                    <div class="video">
+                        <iframe
+                            class="video-child"
+                            src="https://www.youtube.com/embed/OaZoKQcHCuM"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        >
+                        </iframe>
+                    </div>
+                </div>
+                <p id="first-text">
+                    Many, many moons ago, we all thought that Gray Mann and his
+                    brainless robot army were defeated for an eternity. Smack!
+                    Bang! Dead. But one warm summer's day, while the mercs were
+                    battling for the 7,892nd time to get the intelligence, an
+                    ambush of robots fell out of the sky like a lightning bolt.
+                    Bam! They were out for blood and oil, but nothing beats the
+                    urge for revenge. All that remained were destroyed bases,
+                    raided out stockpiles and empty-handed men. Not wanting Mann
+                    Co to be destroyed forever, the remaining mercenaries banded
+                    together to take down Gray Mann's next campaign.
+                    <br /><br />
+                    Gentlemen, get ready for <b>Operation Digital Directive!</b>
+                </p>
+                <div class="divisor thick"></div>
+            </section>
+            <section id="bg03" class="bg">
+                <div class="inner-bg inner-bg-potato">
+                    <div class="inner-bg-text align-self-center">
+                        <p class="boxTitle" id="PARTNERS IN FIGHTING!"></p>
+                        <p class="explanationText">
+                            <a href="https://potatomvm.tf" target="_blank"
+                                >PotatoMVM.TF</a
+                            > is a TF2 community project which aims to create custom
+                            content for Mann vs Machine. They have run several campaigns
+                            in the past which you may have heard of such as <b
+                                >Titanium Tank, Canteen Crasher, Memes vs
+                                Machines, and Madness vs Machines</b
+                            >. They have picked out some of the most challenging
+                            and exciting maps and missions for you to defend
+                            Mann Co with.
+                        </p>
+                    </div>
+                </div>
+                <div class="divisor thin"></div>
+            </section>
+            <section id="bg04" class="bg">
+                <div class="bgInner">
+                    <p
+                        class="boxTitle enormous"
+                        id="THE DIGITAL DIRECTIVE CAMPAIGN"
+                        style="font-size: 88px;"
+                    >
+                    </p>
+                    <p class="explanationText">
+                        So, your very expensive and valuable base has just been
+                        blown up by robots that are slightly dumber than you.
+                        What do you do next? Unfortunately, we don't have a
+                        "What To Do After Your Base Is Destroyed For Dummies"
+                        book on hand, because Pyro burnt down the local library.
+                        <br /><br />
+                        <b
+                            >Introducing: The Digital Directive Campaign Site,
+                            and Mechachievements!</b
+                        >
+                    </p>
+                    <div class="col">
+                        <img
+                            class="picsHolder"
+                            src="/images/tf_pages/digitaldirective/mapsandmissions/maptemplatebundle.png?=v1"
+                            alt=" "
+                        />
+                    </div>
+                    <p class="explanationText">
+                        Mechachievements are simple tasks that you can do
+                        throughout your deployment time. These will
+                        automatically update as you play, so there's no need to
+                        worry about focusing on one at a time. The Creators.TF
+                        website will also track your tour progress as you play
+                        throughout the campaign, so feel free to make fun of
+                        your friends for being the last one to cross the
+                        finishing line.
+                    </p>
+                </div>
+                <div class="divisor paper"></div>
+            </section>
+            <section id="bg05" class="bg">
+                <div
+                    class="inner-bg"
+                    style="display: block; overflow: visible;"
+                >
+                    <p
+                        class="boxTitle enormous"
+                        id="TOURS, MAPS, AND MISSIONS"
+                        style="font-size: 100px;"
+                    >
+                    </p>
+                    <p class="explanationText">
+                        "But wait! What exactly are we going up against?" Good
+                        question little Timmy.
+                        <br />
+                        as part of our campaign, we're introducing two new tours:
+                        <b class="highlight">Platinum Palliative</b>
+                        and <b class="highlight">Malware Mashup</b> with a total
+                        of 30 missions across 22 maps that you'll be embarking on!
+                    </p>
+
+                    <div id="slider">
+                        <img
+                            class="overlayCut"
+                            src="/images/tf_pages/digitaldirective/maptemplatecut1080.png?v=1"
+                            alt=" "
+                        />
+                        <div image-carousel id="slider-carousel">
+                            <maptours
+                                map-workshop-id="https://steamcommunity.com/sharedfiles/filedetails/?id=2151749089"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_akure_rc1.jpg"
+                                map-name="Akure"
+                                map-credits="Startacker"
+                                mission-info="Reboot Rush"
+                                mission-info-credits="by CreatorForce"
+                                mission-info2="Thermal Thunder"
+                                mission-info2-credits="by Startacker"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://steamcommunity.com/sharedfiles/filedetails/?id=2171502505"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_autumnull_rc2_final.jpg"
+                                map-name="Autumnull"
+                                map-credits="Startacker"
+                                mission-info="Dynamic Disaster"
+                                mission-info-credits="by Gettysburg and Braindawg"
+                                mission-info2="Tincan Termination"
+                                mission-info2-credits="by botrot"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://steamcommunity.com/sharedfiles/filedetails/?id=1867255714"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_boogge_rc3c.jpg"
+                                map-name="Boogge"
+                                map-credits="Startacker and Dayal"
+                                mission-info="Rotten Resurgence"
+                                mission-info-credits="by botrot"
+                                mission-info2="Voidlings"
+                                mission-info2-credits="by Gettysburg"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://steamcommunity.com/sharedfiles/filedetails/?id=2051915354"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_cliffside_b6.jpg"
+                                map-name="Cliffside"
+                                map-credits="LASER ACE"
+                                mission-info="Ashes to Ashes"
+                                mission-info-credits="by Gettysburg"
+                                mission-info2="Bionic Bits"
+                                mission-info2-credits="by Hell-Met"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://steamcommunity.com/sharedfiles/filedetails/?id=1955532983"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_dusk_rc6.jpg"
+                                map-name="Dusk"
+                                map-credits="rafradek and Smrekish"
+                                mission-info="Chasing Daybreak"
+                                mission-info-credits="by CreatorForce"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://steamcommunity.com/sharedfiles/filedetails/?id=2009851350"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_estate_b9a.jpg"
+                                map-name="Estate"
+                                map-credits="erk and Sntr"
+                                mission-info="Carbureted Clash"
+                                mission-info-credits="by Braindawg"
+                                mission-info2="Marina Mayhem"
+                                mission-info2-credits="by Tindall Berry"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://steamcommunity.com/sharedfiles/filedetails/?id=705485024"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_giza_b6.jpg"
+                                map-name="Giza"
+                                map-credits="Alias"
+                                mission-info="Tomb Adventure"
+                                mission-info-credits="by zombie"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://tf2maps.net/threads/goldpit.37840"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_goldpit_b13.jpg"
+                                map-name="Goldpit"
+                                map-credits="asd417"
+                                mission-info="Equal Opposites"
+                                mission-info-credits="by Startacker"
+                                mission-info2="Gilded Mainframe"
+                                mission-info2-credits="by Ciaran"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://steamcommunity.com/sharedfiles/filedetails/?id=2249583824"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_hanami_rc1.jpg"
+                                map-name="Hanami"
+                                map-credits="Tindall Berry"
+                                mission-info="Typhoon Tycoon"
+                                mission-info-credits="by Pealover"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://tf2maps.net/downloads/hideout.5970"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_hideout_b3.jpg"
+                                map-name="Hideout"
+                                map-credits="Mikroscopic"
+                                mission-info="Wet Warfare"
+                                mission-info-credits="by Pealover"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://tf2maps.net/downloads/hoovy-dam.8899"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_hoovydam_b8.jpg"
+                                map-name="Hoovydam"
+                                map-credits="Blade x64"
+                                mission-info="Blast Perfect"
+                                mission-info-credits="by Pealover"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://tf2maps.net/downloads/kelly.3982"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_kelly_rc1b.jpg"
+                                map-name="Kelly"
+                                map-credits="Mikroscopic"
+                                mission-info="Mobocracy"
+                                mission-info-credits="by Hell-Met"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://steamcommunity.com/sharedfiles/filedetails/?id=1810817229"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_production_rc6.jpg"
+                                map-name="Production"
+                                map-credits="Suna"
+                                mission-info="Indeathrialization"
+                                mission-info-credits="by colonel barrage"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://tf2maps.net/downloads/mvm_seabed.4334"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_seabed_b5.jpg"
+                                map-name="Seabed"
+                                map-credits="Blade x64 and Herple Nerp"
+                                mission-info="Ocean Commotion"
+                                mission-info-credits="by Herple Nerp"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://steamcommunity.com/sharedfiles/filedetails/?id=1889017291"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_sharp_rc6a.jpg"
+                                map-name="Sharp"
+                                map-credits="dexc34"
+                                mission-info="Sudden Equinox"
+                                mission-info-credits="by Gettysburg"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://steamcommunity.com/sharedfiles/filedetails/?id=1858986178"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_silentsky_rc2.jpg"
+                                map-name="Silent Sky"
+                                map-credits="EOSL and PenolAkushari"
+                                mission-info="Ground Zero"
+                                mission-info-credits="by Ciaran"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://steamcommunity.com/sharedfiles/filedetails/?id=1905568880"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_tensai_rc3.jpg"
+                                map-name="Tensai"
+                                map-credits="Dayal"
+                                mission-info="Scarlet Embodiment"
+                                mission-info-credits="by Remilia Scarlet"
+                                mission-info2="Surface Tension"
+                                mission-info2-credits="by Tindall Berry"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://steamcommunity.com/sharedfiles/filedetails/?id=1998386410"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_transmission_rc7.jpg"
+                                map-name="Transmission"
+                                map-credits="Herple Nerp and dexc34"
+                                mission-info="White Noise"
+                                mission-info-credits="by Seelpit"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://steamcommunity.com/sharedfiles/filedetails/?id=1757111677"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_winterbridge_rc4c.jpg"
+                                map-name="Winterbridge"
+                                map-credits="Mince"
+                                mission-info="Corrupted Catharsis"
+                                mission-info-credits="by Ciaran and Mince"
+                                mission-info2="Necromantic Nonsense"
+                                mission-info2-credits="by Mince"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://steamcommunity.com/sharedfiles/filedetails/?id=2092586511"
+                                map-pic="/images/tf_pages/digitaldirective/maps/mvm_yiresa_rc2.jpg"
+                                map-name="Yiresa"
+                                map-credits="PigPig"
+                                mission-info="Mesa Malware"
+                                mission-info-credits="by Herple Nerp"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://steamcommunity.com/sharedfiles/filedetails/?id=1797845264"
+                                map-pic="/images/tf_pages/digitaldirective/maps/rust_valley.jpg"
+                                map-name="Rust Valley"
+                                map-credits="Sntr"
+                                mission-info="Dust and Dirt"
+                                mission-info-credits="by colonel barrage"
+                            >
+                            </maptours>
+                            <maptours
+                                map-workshop-id="https://tf2maps.net/downloads/mvm_swirl.8913"
+                                map-pic="/images/tf_pages/digitaldirective/maps/swirl.jpg"
+                                map-name="Swirl"
+                                map-credits="asd417 and Dayal"
+                                mission-info="Alpine Skylines"
+                                mission-info-credits="by Herple Nerp"
+                            >
+                            </maptours>
+                        </div>
+                    </div>
+
+                    <p id="MISSION INDICATORS" class="boxTitle"></p>
+                    <p class="explanationText">
+                        After Gray Mann was viciously defeated years ago, his
+                        team got together and started tinkering away in their
+                        super top secret laboratories. They've recently
+                        manufactured a new set of robots, which when fresh off
+                        the conveyor belt, are far stronger than what we've seen
+                        before. Each icon below represent a modification made by
+                        us, so you can easily identify them in the mission you
+                        get deployed on.
+                    </p>
+                    <div id="indicators-section">
+                        <div class="row">
+                            <indicator
+                                indicator-pic="/images/tf_campaign/directive/tf_custom_tanks.jpg"
+                                indicator-description="This mission will feature custom tanks"
+                            >
+                            </indicator>
+                            <indicator
+                                indicator-pic="/images/tf_campaign/directive/tf_custom_upgrades.jpg"
+                                indicator-description="This mission will feature custom player upgrades. (Make sure you have the assets installed before playing this)"
+                            >
+                            </indicator>
+                        </div>
+                        <div class="row">
+                            <indicator
+                                indicator-pic="/images/tf_campaign/directive/tf_major_changes.jpg"
+                                indicator-description="This mission will feature gameplay changes"
+                            >
+                            </indicator>
+                            <indicator
+                                indicator-pic="/images/tf_campaign/directive/tf_player_changes.jpg"
+                                indicator-description="This mission will feature player changes"
+                            >
+                            </indicator>
+                        </div>
+                        <div class="row">
+                            <indicator
+                                indicator-pic="/images/tf_campaign/directive/tf_robot_changes.jpg"
+                                indicator-description="This mission will feature custom robot changes"
+                            >
+                            </indicator>
+                            <indicator
+                                indicator-pic="/images/tf_campaign/directive/tf_robots_on_red.jpg"
+                                indicator-description="This mission will feature RED robots"
+                            >
+                            </indicator>
+                        </div>
+                        <div class="row">
+                            <indicator
+                                indicator-pic="/images/tf_campaign/directive/tf_weapon_changes.jpg"
+                                indicator-description="This mission will feature custom weapons changes"
+                            >
+                            </indicator>
+                            <indicator
+                                indicator-pic="/images/tf_campaign/directive/tf_bomb_reset.jpg"
+                                indicator-description="This mission will feature less waves, but they will be longer than usual"
+                            >
+                            </indicator>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisor thick"></div>
+            </section>
+            <section id="bg06" class="bg bottom">
+                <div class="bgInner">
+                    <p class="boxTitle enormous" id="CREDITS"></p>
+                    <p class="explanationText">
+                        A list containing everyone who worked to make this event
+                        possible.
+                    </p>
+                    <br />
+                    <p class="boxTitle" id="Creators.TF Team"></p>
+                    <div class="container-lg row align-auto">
+                        <people
+                            people-steam-id="76561198188657895"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/68/684d247a3ea49b4b8cd8a495a87fd8321f7ec5a9_full.jpg"
+                            people-name="Moonly Days"
+                            people-desc="Lead Developer"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198042248451"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/4e/4e82d8fe4acf31a3c56d925016e0b991b6e1a548_full.jpg"
+                            people-name="nanochip"
+                            people-desc="Project Lead"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198044581863"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/2a/2a557f907714455697787f83423e9dcee1e9a36a_full.jpg"
+                            people-name="rob5300"
+                            people-desc="Website Developer"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198208622111"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/7d/7d4d96265e46d7c376f198fa1a166dbfd2029f49_full.jpg"
+                            people-name="stephanie"
+                            people-desc="System Administrator"
+                        >
+                        </people>
+                    </div>
+                    <div class="container-lg row align-auto">
+                        <people
+                            people-steam-id="76561198074240735"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/86/86ad9ca04dfea5831079e954ee2f77c6ce4e4d21_full.jpg"
+                            people-name="Potatofactory"
+                            people-desc="Website Developer"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198233791672"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/fa/fa3086efdd206b481e94f028bcbf5a697cb54c82_full.jpg"
+                            people-name="Jota"
+                            people-desc="Website Developer"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198091077647"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/40/40ed8105f27d72b2c3c8a993edc8b62b696686cc_full.jpg"
+                            people-name="TurnTwister"
+                            people-desc="Artist"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198200838625"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/a5/a528a35cd99d4778932741af6252a29285149b48_full.jpg"
+                            people-name="Manndarinchik"
+                            people-desc="Artist"
+                        >
+                        </people>
+                    </div>
+                    <div class="container-lg row align-auto">
+                        <people
+                            people-steam-id="76561198808392634"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/49/49bf5c9b63f326ecc13a2f281e30c7b5f1d71225_full.jpg"
+                            people-name="ZoNiCaL"
+                            people-desc="Writer, Website Developer"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198093409895"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/bd/bd626c9c176765af8b77a2b294cacb2f9d786f1a_full.jpg"
+                            people-name="cheddzy"
+                            people-desc="Graphic Designer"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198058809573"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/64/64cae2121d9ef6814371d39affbd47a10a0dae50_full.jpg"
+                            people-name="Glitch"
+                            people-desc="Artist, MvM Blimp"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198308697597"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/e2/e2a8af913f3375735d0cc3f6e362d8e36b0bd690_full.jpg"
+                            people-name="Polybrow"
+                            people-desc="Composer"
+                        >
+                        </people>
+                    </div>
+                    <div class="container-lg row align-auto">
+                        <people
+                            people-steam-id="76561198435422255"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/f8/f8b67b6ee2990eb55cc5f52f77b4ef9cb500d9be_full.jpg"
+                            people-name="UmKlaiDet"
+                            people-desc="Artist"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198056366195"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/42/42ddc428defbe83735e0545b0ae79160cec6f488_full.jpg"
+                            people-name="Ivory"
+                            people-desc="Server Developer"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198070719072"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/7f/7f38ec76c7b96dd69fe84f0effeaa7b22dc19ab0_full.jpg"
+                            people-name="Dr. Dze"
+                            people-desc="3D Animator"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198061845595"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/e1/e1da9080fb33f5d612737decfd64b6ef7a44317a_full.jpg"
+                            people-name="Alibi"
+                            people-desc="Social Media Manager"
+                        >
+                        </people>
+                    </div>
+                    <br /><br /><br />
+                    <p class="boxTitle" id="PotatoMVM Team"></p>
+                    <div class="container-lg row align-auto">
+                        <people
+                            people-steam-id="76561198120534946"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/c8/c85338e61134fc91c366a9fcf193e0684959f87a_full.jpg"
+                            people-name="DaanBox"
+                            people-desc="Owner, Judge"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561197988531991"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/f0/f0d41a22f3af9b047ebdf39567ddd7ceca4337ab_full.jpg"
+                            people-name="Braindawg"
+                            people-desc="Owner, Mission Maker"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198001380197"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/79/79ed61437656012c8fac5bc41c5ef2b62fb259b7_full.jpg"
+                            people-name="Erikku"
+                            people-desc="Judge"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198024865080"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/00/00849bad0d2f296d6e275f81ae0a93ec1083f9f9_full.jpg"
+                            people-name="rafradek"
+                            people-desc="Developer"
+                        >
+                        </people>
+                    </div>
+                    <div class="container-lg row align-auto">
+                        <people
+                            people-steam-id="76561198094458582"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/48/48b53f38817df88b1643078f96cf4b1c096cada2_full.jpg"
+                            people-name="botrot"
+                            people-desc="Judge, Mission Maker"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198300480694"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/44/44c2b53ea0e80b1652127e8763caf254dfea427c_full.jpg"
+                            people-name="CreatorForce"
+                            people-desc="Judge, Mission Maker"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198300633951"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/18/185957740d3247079383ca7fbd3762b1dfcd94ad_full.jpg"
+                            people-name="Lite"
+                            people-desc="Artist"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198819895048"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/77/776388999a9e59e683abb182539a1d8b36a83683_full.jpg"
+                            people-name="colonel barrage"
+                            people-desc="Mission Maker"
+                        >
+                        </people>
+                    </div>
+                    <div class="container-lg row align-auto">
+                        <people
+                            people-steam-id="76561198016157051"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/b3/b30a84bdf2b3f2698e66907ee0b9645cbf013eca_full.jpg"
+                            people-name="Gettysburg"
+                            people-desc="Judge, Mission Maker"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561197974413252"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/db/db307a57fd3c23da42eb6e89b4f072a37500334b_full.jpg"
+                            people-name="Herple Nerp"
+                            people-desc="Judge, Mission Maker, Map Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198043442312"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/27/276bc0712297755623b365e5424b08e22c6fdad8_full.jpg"
+                            people-name="Mince"
+                            people-desc="Judge, Mission Maker, Map Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198042376883"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/ba/ba992f865703266124b68fb7a98c83a7d55ba6b4_full.jpg"
+                            people-name="Startacker"
+                            people-desc="Judge, Mission Maker, Map Contributor"
+                        >
+                        </people>
+                    </div>
+                    <div class="container-lg row align-auto">
+                        <div class="col-lg people invisible"></div>
+                        <people
+                            people-steam-id="76561197984688600"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/04/04be8f13def54d1adca28e2d7af648f032260e7b_full.jpg"
+                            people-name="Tindall Berry"
+                            people-desc="Judge, Mission Maker, Map Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198326775777"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/8b/8b13e989511373e5fa0ee49b45d427c361135826_full.jpg"
+                            people-name="Ciaran"
+                            people-desc="Judge, Mission Maker"
+                        >
+                        </people>
+                        <div class="col-lg people invisible"></div>
+                    </div>
+                    <br /><br /><br />
+                    <p class="boxTitle" id="CONTRIBUTORS"></p>
+                    <div class="container-lg row align-auto">
+                        <people
+                            people-steam-id="76561197966759649"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/c7/c7c833b77057c6f6f92140e590e61f4266f98bd7_full.jpg"
+                            people-name="iiboharz"
+                            people-desc="Item Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561197988875517"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/c5/c5d6ff4b8ce09dc8fed6c9162b0e153cc7bc6aa5_full.jpg"
+                            people-name="Gadget"
+                            people-desc="Item Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198027900325"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/61/61c6b2140117ae85b9648f2d82b85028beca4d9e_full.jpg"
+                            people-name="OverPovered"
+                            people-desc="Item Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561197997652337"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/bc/bc467e6ec4b66aed11f717c885c8fa2e3283cad0_full.jpg"
+                            people-name="Gigazelle"
+                            people-desc="Item Contributor"
+                        >
+                        </people>
+                    </div>
+                    <div class="container-lg row align-auto">
+                        <people
+                            people-steam-id="76561197990416387"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/30/30cbb43c67d153a77f8e142db578578778f2c87a_full.jpg"
+                            people-name="Matt"
+                            people-desc="Item Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198043764287"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/04/042af6e6701449d44ee919b59f0ff18cc8f3d288_full.jpg"
+                            people-name="@NoNotTheMemes"
+                            people-desc="Item Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198013705321"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/79/795c0dcf8a62a31b4f352dddc9375d7e461ed13f_full.jpg"
+                            people-name="Rain"
+                            people-desc="Item Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561197972168329"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/41/41e7730e2b6d79c31d4c891899f5dc784b6544b5_full.jpg"
+                            people-name="[RMF]RIKUSYO"
+                            people-desc="Item Contributor"
+                        >
+                        </people>
+                    </div>
+                    <div class="container-lg row align-auto">
+                        <people
+                            people-steam-id="76561198048086250"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/2f/2f76c61953424f8572c3879eed44aa105b118049_full.jpg"
+                            people-name="Ms. Cini"
+                            people-desc="Concept Art"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198008861029"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/16/1642e0d55d710f77e07952fce5da5211d26a13ba_full.jpg"
+                            people-name="Freyja"
+                            people-desc="Map Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198071007154"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/c5/c5226dc6f5c98ee0bb42944c6ecbc52ccbcfe754_full.jpg"
+                            people-name="Dayal"
+                            people-desc="Map Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198124272547"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/628670/650ec7eb7a4d13638c5357b562ac519ebe5af961.gif"
+                            people-name="LASERACE"
+                            people-desc="Map Contributor"
+                        >
+                        </people>
+                    </div>
+                    <div class="container-lg row align-auto">
+                        <people
+                            people-steam-id="76561198175970662"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/03/0354c659e5e87f8a38f41c9c9262109a7f0b80f8_full.jpg"
+                            people-name="Smrekish"
+                            people-desc="Map Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198101099843"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/5f/5f0da759a63066a2173042e5b7dd4239e95fa465_full.jpg"
+                            people-name="erk"
+                            people-desc="Map Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198000559913"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/01/01c36555c37bc6943d4be6e7ae340bb8f7849bd3_full.jpg"
+                            people-name="Sntr"
+                            people-desc="Map Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561197965271712"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/e4/e49b3a6a33f3b7542efad3600d795b0cf8ebb028_full.jpg"
+                            people-name="Alias"
+                            people-desc="Map Contributor"
+                        >
+                        </people>
+                    </div>
+                    <div class="container-lg row align-auto">
+                        <people
+                            people-steam-id="76561198000713080"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/83/830664e090f6e0070704c2d6ed95a800d7a39a5e_full.jpg"
+                            people-name="E-Arkham"
+                            people-desc="Map Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198060917401"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/cd/cd95c0df704a66a145b12e2587193872e42a3239_full.jpg"
+                            people-name="Suna"
+                            people-desc="Map Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198115147053"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/85/85acc651c2af046a24dd687e6e5477aa91ff8677_full.jpg"
+                            people-name="dexc34"
+                            people-desc="Map Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198005499221"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/3b/3bfb4a8f04ad160f9c61456e49cdda98147161a6_full.jpg"
+                            people-name="EOSL"
+                            people-desc="Map Contributor"
+                        >
+                        </people>
+                    </div>
+                    <div class="container-lg row align-auto">
+                        <people
+                            people-steam-id="76561198041314432"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/f2/f22fc8802c620bef0bfc20c7ba1cb49b8753b78c_full.jpg"
+                            people-name="PenolAkushari"
+                            people-desc="Map Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198083452034"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/57/57a799620d17f6f129ab49686eafcc7c59a184a0_full.jpg"
+                            people-name="Remilia Scarlet"
+                            people-desc="Mission Maker"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198086337571"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/d3/d3b5b414cdde51989a3bd620c36f423a7b0fa080_full.jpg"
+                            people-name="Seelpit"
+                            people-desc="Mission Maker"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198092554446"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/84/842837903e413891a052df5e03b61f3f28b3ecd0_full.jpg"
+                            people-name="MDP_Toaster"
+                            people-desc="Map Contributor"
+                        >
+                        </people>
+                    </div>
+                    <div class="container-lg row align-auto">
+                        <people
+                            people-steam-id="76561198294712284"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/b9/b95cce9e4140967faded65e27f6dbabe348e4ebf_full.jpg"
+                            people-name="Orin"
+                            people-desc="Mission Maker"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198068190834"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/0d/0d7e13c338b4e18a3aa92d9c62a59cff16ecec11_full.jpg"
+                            people-name="PigPig"
+                            people-desc="Map Contributor"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561197965468138"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/f5/f5528f80a823c8918153dbd103b1f6104b650a72_full.jpg"
+                            people-name="Hell-met"
+                            people-desc="Mission Maker"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198034932214"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg"
+                            people-name="Zombie"
+                            people-desc="Mission Maker"
+                        >
+                        </people>
+                    </div>
+                    <div class="container-lg row align-auto">
+                        <people
+                            people-steam-id="76561198055330640"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/19/19007534db6430b18858ec392f0d1a36accec600_full.jpg"
+                            people-name="Pealover"
+                            people-desc="Mission Maker"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198158093750"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/29/292b4887b4c28c1a227cedf2dfe05076023db8a0_full.jpg"
+                            people-name="Bazooks"
+                            people-desc="Artist"
+                        >
+                        </people>
+                        <people
+                            people-steam-id="76561198036209556"
+                            people-pic="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/ee/ee55064be09d5c51e3bbfcfbbbdcb61784c1f5bd_full.jpg"
+                            people-name="CTriggerHurt"
+                            people-desc="Giant Sniper Model"
+                        >
+                        </people>
+                    </div>
+                </div>
+            </section>
+            <section
+                class="bg footer"
+                style="background-image: url(/images/tf_pages/digitaldirective/maps/mvm_akure_rc1.jpg);"
+            >
+                <div class="fade-panel Round"></div>
+                <div class="fade-panel T"></div>
+                <footer class="row">
+                    <div class="col-lg" id="footer-day-selector">
+                        <footerctflogo></footerctflogo>
+                        <div class="row">
+                            <ul id="footer-day-table">
+                                <a href="/landing/digitaldirective">
+                                    <li class="footer-day footer-day-selected">
+                                        DAY 1<br />Maps and Missions
+                                    </li>
+                                </a>
+                                <a
+                                    href="/landing/digitaldirective/augmentations"
+                                >
+                                    <li class="footer-day">
+                                        DAY 2<br />Augmentations
+                                    </li>
+                                </a>
+                                <a
+                                    href="/landing/digitaldirective/medalofhonor"
+                                >
+                                    <li class="footer-day">
+                                        DAY 3<br />Medal of Honor
+                                    </li>
+                                </a>
+                                <a href="/landing/digitaldirective/deployment">
+                                    <li
+                                        class="footer-day"
+                                        style="border-bottom: 0px;"
+                                    >
+                                        DAY 4<br />Deployment
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="footer-logo">
+                            <img
+                                src="/images/creators_logo_gear_fin-bwoutline_orange.svg"
+                                alt=" "
+                            />
+                        </div>
+                        <p>
+                            &copy; Creators.TF Team 2019 - <span
+                                id="copyright-year-field">2022</span
+                            >
+                            <br />
+                            Creators.TF, the
+                            Creators.TF logo and Creators.TF are developed, founded
+                            and owned by the Creators.TF Team.
+                        </p>
+                    </div>
+                    <div class="col-lg">
+                        <div class="footer-logo">
+                            <img src="/images/valve.svg" alt=" " />
+                        </div>
+                        <p>
+                            Valve, the Valve logo, Steam, the Steam logo, Team
+                            Fortress, the Team Fortress logo are trademarks
+                            and/or registered trademarks of Valve Corporation.
+                            We are not affiliated with Valve Corporation. All
+                            rights belong to Valve Corporation.
+                        </p>
+                    </div>
+                </footer>
+            </section>
+        </div>
+
+        <script is:inline src="https://cdn.jsdelivr.net/npm/vue@2.7.14"
+        ></script>
+        <script is:inline>
+            // Required is defined so it throws an error in production reminding you
+            // to set a value, as if the default name/desc wasn't obnoxious enough.
+            Vue.component("indicator", {
+                props: {
+                    indicatorPic: {
+                        type: String,
+                        required: true,
+                        default: "/images/no_avatar.jpg",
+                    },
+                    // indicatorName: {
+                    //     type: String,
+                    //     required: true,
+                    //     default: "DEFINE AN INDICATOR NAME"
+                    // },
+                    indicatorDescription: {
+                        type: String,
+                        required: true,
+                        default: "DEFINE AN INDICATOR DESCRIPTION",
+                    },
+                },
+                template: `
+                <div class="indicator col-lg">
+                    <img class="icon" :src="indicatorPic" alt=" ">
+                    <div class="indicator-details">
+                        <p class="indicator-description">{{ indicatorDescription }}</p>
+                    </div>
+                </div>
+            `,
+            });
+
+            Vue.component("people", {
+                props: {
+                    peopleSteamId: {
+                        type: String,
+                        required: true,
+                        default: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // FUNNY VIDEO!!!!!
+                    },
+                    peoplePic: {
+                        type: String,
+                        required: true,
+                        default: "/images/no_avatar.jpg",
+                    },
+                    peopleName: {
+                        type: String,
+                        required: true,
+                        default: "DEFINE THE PERSON'S NAME",
+                    },
+                    peopleDesc: {
+                        type: String,
+                        required: true,
+                        default: "DEFINE THE PERSON'S ROLE",
+                    },
+                },
+                template: `
+                <a class="col-lg people" :href="'https://steamcommunity.com/profiles/' + peopleSteamId" target="_blank">
+                    <img class="icon" :src="peoplePic" alt=" ">
+                    <div class="people-details">
+                        <p class="people-name">{{ peopleName }}</p>
+                        <p class="people-description">{{ peopleDesc }}</p>
+                    </div>
+                </a>
+            `,
+            });
+
+            Vue.component("maptours", {
+                props: {
+                    mapWorkshopId: {
+                        type: String,
+                        required: true,
+                        default: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // FUNNY VIDEO!!!!!
+                    },
+                    mapPic: {
+                        type: String,
+                        required: true,
+                        default: "/images/no_avatar.jpg",
+                    },
+                    mapName: {
+                        type: String,
+                        required: true,
+                        default: "DEFINE THE MAP'S NAME",
+                    },
+                    mapCredits: {
+                        type: String,
+                        required: true,
+                        default: "DEFINE THE CREDITS",
+                    },
+                    // missionIndicators: {
+                    //     type: String,
+                    //     required: false,
+                    //     default: ""
+                    // },
+                    // missionIndicators2: {
+                    //     type: String,
+                    //     required: false,
+                    // },
+                    missionInfo: {
+                        type: String,
+                        required: false,
+                        default: "",
+                    },
+                    missionInfo2: {
+                        type: String,
+                        required: false,
+                    },
+                    missionInfoCredits: {
+                        type: String,
+                        required: false,
+                        default: "",
+                    },
+                    missionInfo2Credits: {
+                        type: String,
+                        required: false,
+                    },
+                },
+                template: `
+                <div class="map-holder">
+                    <a :href="mapWorkshopId" target="_blank">
+                        <div class="map-workshop-label"></div>
+                    </a>
+                    <div class="map-mission-holder">
+                        <h2>Missions</h2>
+                        <div class="map-mission-holder-individual">
+                            <div>
+                                <span>{{ missionInfo }}</span><span class="mission-info-credits"> {{ missionInfoCredits }}</span>
+                            </div>
+                            <div>
+                                <span>{{ missionInfo2 }}</span><span class="mission-info-credits"> {{ missionInfo2Credits }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-info-holder">
+                        <p class="map-name">{{ mapName }}</p>
+                        <p class="map-creators">Made by: {{ mapCredits }}</p>
+                    </div>
+                    <img :src="mapPic" alt=" ">
+                </div>
+            `,
+            });
+
+            // yeah.
+            Vue.component("footerctflogo", {
+                template: `
+                <a href="/" target="_blank">
+                    <img src="/images/tf2_square_event_mvm.png" alt="Creators.TF Operation Digital Directive Logo" title="Creators.TF Operation Digital Directive Logo">
+                </a>
+            `,
+            });
+
+            var app = new Vue({
+                el: "#app",
+            });
+        </script>
+    </body>
+</html>

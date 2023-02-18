@@ -1,0 +1,96 @@
+:root
+{
+    --ctfdark-color-content: #aaa;
+    --ctfdark-color-foreground: #eee;
+    --ctfdark-color-background: #2b2826;
+
+    --ctfdark-porportions-gutter: 5mm;
+    --ctfdark-porportions-logo: 32mm;
+}
+
+/** HOTFIX - Navigation bar positioning & sizing.
+************/
+.header_logotype
+{
+    height: inherit;
+    padding-top: 3mm;
+}
+
+.header_logotype img
+{
+    height: 15mm;
+}
+
+.header_navigation
+{
+    padding: initial !important;
+}
+
+.header_container > * { margin: 0 var(--ctfdark-porportions-gutter); }
+.main_navigation      { gap:      var(--ctfdark-porportions-gutter); }
+/***************************************************/
+
+
+/** HOTFIX - Default browser styling overrides.
+/*******/
+body
+{
+    color: var(--ctfdark-color-foreground);
+    background: var(--ctfdark-color-background);
+    min-height: 100vh;
+}
+
+main
+{
+    color: var(--ctfdark-color-content);
+}
+/***************************************************/
+
+/** HOTFIX - Footer semantics + restyle
+/*******/
+#core {
+    display: flex;
+    flex-direction: column;
+    /* Johnny: We go a little over so we don't over-emphasize the footer. */
+    min-height: 112vh;
+}
+
+main {
+    flex-grow: 1;
+    height: unset;
+}
+
+footer
+{
+    background: #1b1a18;
+}
+
+footer #wrapper
+{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 5mm 0 2mm;
+}
+
+footer:before
+{
+    width: 100%;
+    height: 5mm;
+    box-shadow: 0 8px 2vh -3px #0f0f0f;
+    height: 1ex;
+    background: #2e2c29;
+    content: '';
+    display: block;
+}
+
+
+.company_copyright
+{
+    height: var(--ctfdark-porportions-logo);
+    width:  var(--ctfdark-porportions-logo);
+    background-repeat: no-repeat;
+}
+.company_copyright.valve    { height: var(--ctfdark-porportions-logo) !important; }
+.company_copyright.creators { height: var(--ctfdark-porportions-logo) !important; }
+.company_copyright.creators { transform: translate(0, -5mm); }
+/***************************************************/

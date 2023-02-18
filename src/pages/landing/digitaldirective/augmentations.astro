@@ -1,0 +1,427 @@
+---
+import BaseHead from "../../../components/BaseHead.astro";
+import "../../../styles/landing/dd/day1.css";
+import "../../../styles/landing/dd/robotaugmentations.css"
+---
+
+<html>
+    <BaseHead
+        title="Creators.TF - Digital Directive - Augmentations (Day 2)"
+        description="So, Digital Directive huh? If you're thinking that this is some weird technology-infused hiking trail, then you'd be completely wrong! Hiking is for babies, walking is for big, strong men!"
+        icon="/images/tf2_square_event_mvm.png"
+    >
+        <link href="https://fonts.gstatic.com" rel="preconnect" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+        />
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@glidejs/glide"
+        ></script>
+    </BaseHead>
+    <body>
+        <div id="app">
+            <section id="day02_bg01" class="bg">
+                <div id="logo-video-holder">
+                    <video muted="" autoplay="" loop="" preload="auto">
+                        <source src="/images/tf_pages/digitaldirective/digital_directive_logo_animated.webm" type="video/webm">
+                    </video>
+                </div>
+            </section>
+            <section id="day02_bg02" class="bg top">
+                <div id="day-selector">
+                    <a href="/landing/digitaldirective">
+                        <div class="dayPanel first day1 active">
+                            <video class="dayPanelVideo" muted="" autoplay="" loop="" preload="auto">
+                                <source src="/images/tf_pages/digitaldirective/day1_animated.webm" type="video/webm">
+                            </video>
+                        </div>
+                    </a>
+                    <a href="/landing/digitaldirective/augmentations">
+                        <div class="dayPanel second day2 active selected">
+                            <video class="dayPanelVideo selectedVideo" muted="" autoplay="" loop="" preload="auto">
+                                <source src="/images/tf_pages/digitaldirective/day2_animated.webm" type="video/webm">
+                            </video>
+                        </div>
+                    </a>
+                    <a href="/landing/digitaldirective/medalofhonor">
+                        <div class="dayPanel third day3 active">
+                            <video class="dayPanelVideo" muted="" autoplay="" loop="" preload="auto">
+                                <source src="/images/tf_pages/digitaldirective/day3_animated.webm" type="video/webm">
+                            </video>
+                        </div>
+                    </a>
+                    <a href="/landing/digitaldirective/deployment">
+                        <div class="dayPanel fourth day4 active">
+                            <video class="dayPanelVideo" muted="" autoplay="" loop="" preload="auto">
+                                <source src="/images/tf_pages/digitaldirective/day4_animated.webm" type="video/webm">
+                            </video>
+                        </div>
+                    </a>
+                </div>
+                <p id="first-text" class="day02_first-text">
+                    Welcome to Day 2 of your briefing maggots! As outlined during yesterday's briefing,
+                    we are going on quite the campaign across the world! But that's the fun part, and
+                    we don't like having fun around here!
+                    <br><br>
+                    Gray Mann has been hard at work developing his robots to be even stronger than before.
+                    My calculations predict if you were to put one in front of a little baby, they'd cry
+                    for their mommy. We are not little babies however, we are mercenaries, and we don't
+                    cry <i>(mostly)</i>! So what do you do when your partner in the lab lights the flame
+                    when he wasn't told to? You fight fire with fire, and set your partner
+                    ablaze! To take down these robots, we'll need to resort to cavemen tactics. Let's see what
+                    Gray Mann has been up to…
+                </p>
+                <div class="divisor thick"></div>
+            </section>
+            <section id="day02_bg03" class="bg">
+                <div class="inner-bg inner-bg-day02-committingconflicts">
+                    <div class="overlay"></div>
+                    <div class="fade-panel T"></div>
+                    <div class="fade-panel B"></div>
+                    <p class="boxTitle enormous" id="COMMITTING CONFLICTS" style="font-size: 119px; letter-spacing: 2px;"></p>
+                    <p class="explanationText">
+                        Our intelligence shows that Gray Manns robots have had serious upgrades to each robot unit.
+                        <b>Some missions feature brand new and upgraded robots,</b> straight off the conveyor belt.
+                        <br>
+                        <b>We've discovered that not all robots share the same changes, however.</b> We've done our best to
+                        decode the raw code into something understandable for mercenaries, so they know what to expect
+                        going into battle:
+                    </p>
+                </div>
+                <!-- <div class="divisor thick"></div> -->
+            </section>
+            <section id="day02_bg03_2" class="bg">
+                <div class="inner-bg">
+                    <div class="fade-panel T"></div>
+                    <div id="list-holder">
+                        <ul>
+                            <li>Pyro</li>
+                            <ul>
+                                <li>The Pyro unit has had its flamethrowers upgraded with air tanks, allowing for reflections of fast-moving, and
+                                explosive projectiles on all weapons except the Dragon's Fury.</li>
+                            </ul>
+                            <li>Sniper</li>
+                            <ul>
+                                <li>The Sniper unit has been updated so that rifle lasers are hidden to reduce the chances of being seen.</li>
+                            </ul>
+                            <li>Soldiers</li>
+                            <ul>
+                                <li>Robots are now able to take advantage of a brand new type of rocket, internally called Homing_Rocket. These rockets will
+                                constantly target players when fired and are devastating on impact.</li>
+                            </ul>
+                            <li>The Sentry Buster</li>
+                            <ul>
+                                <li>The Sentry Buster unit has had significant changes in its configuration. Sentry Busters no longer kill their own
+                                robots with their detonation, and an experimental unit of Sentry Busters targets players instead of buildings.</li>
+                            </ul>
+                            <li>Some robots are now able to take advantage of Halloween spells.</li>
+                            <li>There appears to be more augmentations that are not decoded, so you'll have to find out for yourself out on the
+                            battlefield! <b>They appear to change from mission to mission.</b></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="divisor thick"></div>
+                <!-- <div class="divisor paper-two"></div> -->
+            </section>
+            <section id="day02_bg04" class="bg">
+                <div class="inner-bg inner-bg-day02-repurposedHardware">
+                    <div class="fade-panel T"></div>
+                    <div class="overlay"></div>
+                    <div class="fade-panel B"></div>
+                    <p class="boxTitle enormous" id="REPURPOSED HARDWARE"></p>
+                </div>
+            </section>
+            <section id="day02_bg04_2" class="bg">
+                <div class="inner-bg">
+                    <div class="fade-panel T"></div>
+                    <p class="explanationText">
+                        When we destroyed Gray Mann in his first wave of robots, the Engineer decided to do a deep dive into their source code
+                        and hardware to see what potatoes made them tick. Combing through ones and zeros and assembly code, he was able to get
+                        working prototypes of RED fighter robots. Initially, these robots were able to shoot at targets like a little baby.
+                        However, by tinkering with the robots he had designed for outer space combat, he was able to
+                        successfully recreate some of the robots that troubled the mercenaries to fight on our side.
+                        <br>
+                        <br>
+                        These RED Robots are your friends. They might not be made up of the same matter as you, and they might not share the
+                        same emotions, but they don't shoot you, so don't shoot back at them. <b>Some missions</b> assist you with these creations,
+                        helping you face the robot onslaught whenever it gets to be too much. You'll see them as both normal robots and giants,
+                        in a wide variety of classes.
+                    </p>
+                </div>
+                <div class="divisor thick"></div>
+            </section>
+            <section id="day02_bg05" class="bg">
+                <div class="inner-bg inner-bg-day02-supplyDrop">
+                    <div class="fade-panel L"></div>
+                    <div class="inner-bg-text">
+                        <p class="boxTitle enormous" id="SUPPLY DROPS!" style="letter-spacing: -2px;"></p>
+                        <p class="explanationText">
+                            The first thing that will be delivered to you is modified upgrades!
+                            <br>
+                            With the new batch of orders from the Administrator,
+                            some of our dusty, rotting, and old-fashioned technology needed a serious overhaul. So the Engineer had a few drinks one
+                            night, drafted together some blueprints, and threw together some modified upgrades! Made out of leftover scrap and
+                            computer parts, there's a lot that's changed on your shopping list: price changes, stronger weapons, or even removing
+                            old and dusty upgrades.
+                            <br>
+                            <br>
+                            <b>Upgrades will change depending on which mission is being played</b>, so see which ones you can use
+                            to your advantage. Every credit counts!
+                        </p>
+                    </div>
+                    <div class="fade-panel B"></div>
+                </div>
+                <div class="divisor paper-two"></div>
+            </section>
+            <section id="day02_bg06" class="bg bottom">
+                <div class="inner-bg">
+                    <div class="fade-panel T"></div>
+                    <p class="boxTitle" id="PLAYER AND WEAPON ATTRIBUTES" style="font-size: 83px;"></p>
+                    <p class="explanationText">
+                        A great writer once said: “With great power comes great responsibility”. However, he's dead now, because we've upped our
+                        training schedule ten-fold! That's right, you heard me correctly because we've got <b>custom player changes coming to some missions!</b>
+                        <br><br>
+                        Now I can see the excited looks on your faces, but we don't need all of you to come. <b>Some of the missions</b> you play will
+                        feature strict class limits. Each mission requires different wants or needs, so <b>each shipment is unique
+                        to each mission.</b> You can expect to see some changes to the default stats of players, such as negating fall damage,
+                        disabling flamethrower pushback and ammo, and health regeneration.
+                        <br><br>
+                        That's not the only thing we need to do to horde off Gray Mann's new robots, however. Engineer has pulled out some old
+                        schematics from his workplace, and he's been working hard to make sure our favorite toys are also up to scratch.
+                        <b>Each mission has different and unique changes.</b> Whether it's the Flamethrower, the Gunslinger, or a Sniper Rifle,
+                        most weapons should have a viable purpose for killing robots after his tweaking work. I mean hey, why make them if we don't
+                        wanna shoot them in the first place?
+                    </p>
+                </div>
+            </section>
+            <section class="bg footer" style="background-image: url(/images/tf_pages/digitaldirective/maps/mvm_cliffside_b6.jpg)">
+                <div class="fade-panel Round"></div>
+                <div class="fade-panel T"></div>
+                <footer class="row">
+                    <div class="col-lg" id="footer-day-selector">
+                        <footerctflogo></footerctflogo>
+                        <div class="row">
+                            <ul id="footer-day-table">
+                                <a href="/landing/digitaldirective">
+                                    <li class="footer-day">DAY 1<br>Maps and Missions</li>
+                                </a>
+                                <a href="/landing/digitaldirective/augmentations">
+                                    <li class="footer-day footer-day-selected">DAY 2<br>Augmentations</li>
+                                </a>
+                                <a href="/landing/digitaldirective/medalofhonor">
+                                    <li class="footer-day">DAY 3<br>Medal of Honor</li>
+                                </a>
+                                <a href="/landing/digitaldirective/deployment">
+                                    <li class="footer-day" style="border-bottom: 0px;">DAY 4<br>Deployment</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="footer-logo">
+                            <img
+                                src="/images/creators_logo_gear_fin-bwoutline_orange.svg"
+                                alt=" "
+                            />
+                        </div>
+                        <p>
+                            &copy; Creators.TF Team 2019 - <span
+                                id="copyright-year-field">2022</span
+                            >
+                            <br />
+                            Creators.TF, the
+                            Creators.TF logo and Creators.TF are developed, founded
+                            and owned by the Creators.TF Team.
+                        </p>
+                    </div>
+                    <div class="col-lg">
+                        <div class="footer-logo">
+                            <img src="/images/valve.svg" alt=" ">
+                        </div>
+                        <p>
+                            Valve, the Valve logo, Steam, the Steam logo, Team Fortress, the Team Fortress logo are trademarks and/or
+                            registered trademarks of Valve Corporation. We are not affiliated with Valve Corporation. All rights
+                            belong to Valve Corporation.
+                        </p>
+                    </div>
+                </footer>
+            </section>
+        </div>
+
+        <script is:inline src="https://cdn.jsdelivr.net/npm/vue@2.7.14"
+        ></script>
+        <script is:inline>
+            // Required is defined so it throws an error in production reminding you
+            // to set a value, as if the default name/desc wasn't obnoxious enough.
+            Vue.component("indicator", {
+                props: {
+                    indicatorPic: {
+                        type: String,
+                        required: true,
+                        default: "/images/no_avatar.jpg",
+                    },
+                    // indicatorName: {
+                    //     type: String,
+                    //     required: true,
+                    //     default: "DEFINE AN INDICATOR NAME"
+                    // },
+                    indicatorDescription: {
+                        type: String,
+                        required: true,
+                        default: "DEFINE AN INDICATOR DESCRIPTION",
+                    },
+                },
+                template: `
+                <div class="indicator col-lg">
+                    <img class="icon" :src="indicatorPic" alt=" ">
+                    <div class="indicator-details">
+                        <p class="indicator-description">{{ indicatorDescription }}</p>
+                    </div>
+                </div>
+            `,
+            });
+
+            Vue.component("people", {
+                props: {
+                    peopleSteamId: {
+                        type: String,
+                        required: true,
+                        default: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // FUNNY VIDEO!!!!!
+                    },
+                    peoplePic: {
+                        type: String,
+                        required: true,
+                        default: "/images/no_avatar.jpg",
+                    },
+                    peopleName: {
+                        type: String,
+                        required: true,
+                        default: "DEFINE THE PERSON'S NAME",
+                    },
+                    peopleDesc: {
+                        type: String,
+                        required: true,
+                        default: "DEFINE THE PERSON'S ROLE",
+                    },
+                },
+                template: `
+                <a class="col-lg people" :href="'https://steamcommunity.com/profiles/' + peopleSteamId" target="_blank">
+                    <img class="icon" :src="peoplePic" alt=" ">
+                    <div class="people-details">
+                        <p class="people-name">{{ peopleName }}</p>
+                        <p class="people-description">{{ peopleDesc }}</p>
+                    </div>
+                </a>
+            `,
+            });
+
+            Vue.component("maptours", {
+                props: {
+                    mapWorkshopId: {
+                        type: String,
+                        required: true,
+                        default: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // FUNNY VIDEO!!!!!
+                    },
+                    mapPic: {
+                        type: String,
+                        required: true,
+                        default: "/images/no_avatar.jpg",
+                    },
+                    mapName: {
+                        type: String,
+                        required: true,
+                        default: "DEFINE THE MAP'S NAME",
+                    },
+                    mapCredits: {
+                        type: String,
+                        required: true,
+                        default: "DEFINE THE CREDITS",
+                    },
+                    // missionIndicators: {
+                    //     type: String,
+                    //     required: false,
+                    //     default: ""
+                    // },
+                    // missionIndicators2: {
+                    //     type: String,
+                    //     required: false,
+                    // },
+                    missionInfo: {
+                        type: String,
+                        required: false,
+                        default: "",
+                    },
+                    missionInfo2: {
+                        type: String,
+                        required: false,
+                    },
+                    missionInfoCredits: {
+                        type: String,
+                        required: false,
+                        default: "",
+                    },
+                    missionInfo2Credits: {
+                        type: String,
+                        required: false,
+                    },
+                },
+                template: `
+                <div class="map-holder">
+                    <a :href="mapWorkshopId" target="_blank">
+                        <div class="map-workshop-label"></div>
+                    </a>
+                    <div class="map-mission-holder">
+                        <h2>Missions</h2>
+                        <div class="map-mission-holder-individual">
+                            <div>
+                                <span>{{ missionInfo }}</span><span class="mission-info-credits"> {{ missionInfoCredits }}</span>
+                            </div>
+                            <div>
+                                <span>{{ missionInfo2 }}</span><span class="mission-info-credits"> {{ missionInfo2Credits }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-info-holder">
+                        <p class="map-name">{{ mapName }}</p>
+                        <p class="map-creators">Made by: {{ mapCredits }}</p>
+                    </div>
+                    <img :src="mapPic" alt=" ">
+                </div>
+            `,
+            });
+
+            // yeah.
+            Vue.component("footerctflogo", {
+                template: `
+                <a href="/" target="_blank">
+                    <img src="/images/tf2_square_event_mvm.png" alt="Creators.TF Operation Digital Directive Logo" title="Creators.TF Operation Digital Directive Logo">
+                </a>
+            `,
+            });
+
+            var app = new Vue({
+                el: "#app",
+            });
+        </script>
+    </body>
+</html>
